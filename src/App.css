@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -12,6 +13,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.navbar navbar-expand-lg{
+  background-color: blue;
+}
+.card {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
 
 .App-header {
   background-color: #282c34;
@@ -21,11 +29,55 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
   color: #61dafb;
+}
+.ram {
+  color:orange;
+}
+ 
+.namematch{
+  color:red;
+}
+.formc{
+ 
+  color:white;
+ 
+}
+.butt{
+background-color: blue;
+margin-right: 2px;
+
+}
+#photu {
+  height: 85vh;
+}
+
+
+
+#buttn {
+    background-color:blue;
+    color:white;
+     
+}
+
+#signin {
+    background-color:red;
+    color:white; 
+}
+
+.nvlnk{
+
+  /*color:gold;*/
+  text-emphasis-style: italic;
+}
+
+.text-center text-lg-start text-white{
+
+  margin-top: 0rem;
 }
 
 @keyframes App-logo-spin {
