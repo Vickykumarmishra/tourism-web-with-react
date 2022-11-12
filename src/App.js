@@ -33,7 +33,7 @@ isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai 
 
 
 {/*<TextForm/>*/}
-<BrowserRouter>
+<BrowserRouter basename={process.env.PUBLIC_URL}>
 
 {/*<NavLink to='/TextForm' className='nvlnk'>feedback_Form / </NavLink>
 <Link to='/BiharTourismHome'>Home</Link>*/}
