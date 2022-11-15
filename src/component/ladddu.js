@@ -13,7 +13,7 @@ export default function ladddu(props) {
     </div>
 
     <div class="col" style={{marginBottom:"2rem"}}>
-    <center>  <h3 style={{color:"grey"}}><b>Order prasad at your home</b></h3></center>
+    <center>  <h3 style={{color:"pink"}}><b>Order prasad at your home</b></h3></center>
     <center> <img src="laddu.jpg" className='img-thumbnail' alt="..." /></center>
   
     <center>Laddu,Price:100<center/>
