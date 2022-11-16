@@ -134,7 +134,7 @@ export default function biharTourismHome() {
   <div className="card-body">
     <h5 className="card-title">Rajgir</h5>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="#"  className="btn btn-primary">Know In Details</NavLink>
+    <NavLink to="/Rajgir"  className="btn btn-primary">Know In Details</NavLink>
     
   </div>
 </div>
@@ -148,7 +148,7 @@ export default function biharTourismHome() {
   <div className="card-body">
     <h5 className="card-title">Gurpa Hills</h5>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="#" className="btn btn-primary">Know In Details</NavLink>
+    <NavLink to="/Gurpa" className="btn btn-primary">Know In Details</NavLink>
     <Outlet/>
   </div>
 </div>
