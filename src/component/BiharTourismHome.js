@@ -119,7 +119,7 @@ export default function biharTourismHome() {
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
    
    
-    <NavLink to="#" className="btn btn-primary">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
+    <NavLink to="/chatthpuja" className="btn btn-primary">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
 </div>

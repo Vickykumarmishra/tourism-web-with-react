@@ -17,6 +17,7 @@ import MoreDetails from './component/MoreDetails';
 import ladddu from './component/ladddu';
 import HeaderContainer from './containers/HeaderContainer';
 import HomeContainer from './containers/HomeContainer';
+import Chatthpuja from './component/Chatthpuja';
 
 
 function App() {
@@ -51,6 +52,7 @@ isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai 
   <Route path="BiharTourismHome/" element={<BiharTourismHome />}> </Route> 
   <Route path='Harmandir' element={<Harmandir/>}></Route>  
   <Route path='/Nalanda' element={<Nalanda/>}></Route>
+  <Route path='Chatthpuja' element={<Chatthpuja/>}></Route>  
  { /* In computer network communications, the HTTP 404, 404 not found, 404, 404 error, 
  page not found or file not found error message is a hypertext transfer protocol standard response code, 
  to indicate that the browser was able to communicate with a given server, but the server could not find what was requested.*/}
