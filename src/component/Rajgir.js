@@ -11,7 +11,7 @@ export default function Rajgir() {
 
 Rajgir was the first capital of the ancient kingdom of Magadha, a state that would eventually evolve into the Mauryan Empire.[3] It finds mention in India's renowned literary epic, the Mahabharata, through its king Jarasandha. The town's date of origin is unknown, although ceramics dating to about 1000 BC have been found in the city. The 2,500-year-old cyclopean wall is also located in the region.
 
-The town is also notable in Jainism and Buddhism.[4] It was the birthplace of the 20th Jain Tirthankar Munisuvrata, and is closely associated with the Mahavira and Gautama Buddha.[5] Both Mahavira and Buddha taught their beliefs in Rajgir during the 6th and 5th century BC, and the Buddha was offered a forest monastery here by the king Bimbisara. As such, the city of Rajgir became one of the Buddha's most important preaching locations.
+The town is also notable in Jainism and also in  Buddhism.[4] It was the birthplace of the 20th Jain Tirthankar Munisuvrata, and is closely associated with the Mahavira and Gautama Buddha.[5] Both Mahavira and Buddha taught their beliefs in Rajgir during the 6th and 5th century BC, and the Buddha was offered a forest monastery here by the king Bimbisara. As such, the city of Rajgir became one of the Buddha's most important preaching locations.
 
 The ancient Nalanda university was located in the vicinity of Rajgir, and the contemporary Nalanda University named after it was founded in 2010 nearby. The town is also famed for its natural springs and towering hills that dominate the landscape.
       </p>
