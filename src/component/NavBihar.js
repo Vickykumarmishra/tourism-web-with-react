@@ -18,13 +18,13 @@ export default function NavBihar(props) {
      
       <Link className="navbar-brand" to="#"><i><b>Bihar Tourism</b></i></Link>
 
-      <Link to="#" style={{marginRight:"2rem"}}>Art & Culture</Link>
+      {/*<Link to="#" style={{marginRight:"2rem"}}>Art & Culture</Link>
       
       
       
       <Link to="#" style={{marginRight:"2rem"}}>Explore Bihar</Link>
       
-      <Link to="#" style={{marginRight:"2rem"}}>About</Link>
+  <Link to="#" style={{marginRight:"2rem"}}>About</Link>*/}
       
       </BrowserRouter>
 
