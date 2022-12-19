@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useState } from 'react';
 //import Nalanda from './Nalanda'
-
+const b=1;
 export default function biharTourismHome() {
 
 
@@ -59,8 +59,8 @@ export default function biharTourismHome() {
       <div className="card" id="card1" style={{width:"18rem;"}}>
   <img src="nalanda_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Nalanda University</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title"  style={{color:'green'}}>Nalanda University</h5>
+    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
    
    
     <NavLink to="/Nalanda" className="btn btn-primary">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
@@ -76,8 +76,8 @@ export default function biharTourismHome() {
       <div className="card" id="card2" style={{width: "18rem;"}}>
   <img src="mahavir_mandir_755x450.jpeg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Mahaveer Mandir</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title"  style={{color:'green'}}>Mahaveer Mandir</h5>
+    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <NavLink to="/Mahaveer"  className="btn btn-primary">Know In Details</NavLink>
     
   </div>
@@ -90,8 +90,8 @@ export default function biharTourismHome() {
       <div className="card" id="card3" style={{width: "18rem;"}}>
   <img src="Harmandir_Patna_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Harmandir sahib</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title"  style={{color:'green'}}>Harmandir sahib</h5>
+    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <NavLink to="/Harmandir" className="btn btn-primary">Know In Details</NavLink>
     <Outlet/>
   </div>
@@ -111,8 +111,8 @@ export default function biharTourismHome() {
       <div className="card" id="card4" style={{width:"18rem;"}}>
   <img src="chatth_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Chatth Puja</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title"  style={{color:'green'}}>Chatth Puja</h5>
+    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
    
    
     <NavLink to="/chatthpuja" className="btn btn-primary">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
@@ -128,8 +128,8 @@ export default function biharTourismHome() {
       <div className="card" id="card5" style={{width: "18rem;"}}>
   <img src="rajgir_755x450.jpg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Rajgir</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title"  style={{color:'green'}}>Rajgir</h5>
+    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <NavLink to="/Rajgir"  className="btn btn-primary">Know In Details</NavLink>
     
   </div>
@@ -142,8 +142,8 @@ export default function biharTourismHome() {
       <div className="card" id="card6" style={{width: "18rem;"}}>
   <img src="gurpa_755x450.jpeg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Gurpa Hills</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title" style={{color:'green'}}>Gurpa Hills</h5>
+    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <NavLink to="/Gurpa" className="btn btn-primary">Know In Details</NavLink>
     <Outlet/>
   </div>
