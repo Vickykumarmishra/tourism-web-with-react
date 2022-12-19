@@ -49,7 +49,7 @@ email:Yup.string()
 
 
      
-     <div className="container">
+   <center><div className="container">
         
        <form  className="btn btn-outline-success" style={{backgroundColor:"black"}} onSubmit={formik.handleSubmit}>
 
@@ -96,7 +96,7 @@ email:Yup.string()
       
        
        
-       </div>
+       </div></center>  
    )
  }
  export default Form;
