@@ -1,16 +1,14 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import { useState } from 'react';
 //import Nalanda from './Nalanda'
 
-
 export default function biharTourismHome() {
+
+
+  
   return (
     <div>
-
-
-
-
-   
    
 <div id="carouselExampleDark" className="carousel carousel-dark slide" style={{border:"2px solid blue"}} data-bs-ride="carousel">
     <div className="carousel-indicators">
