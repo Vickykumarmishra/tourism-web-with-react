@@ -17,14 +17,14 @@ export default function biharTourismHome() {
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div className="carousel-inner">
-      <div className="carousel-item active" data-bs-interval="1500">
+      <div className="carousel-item active" data-bs-interval="1000">
         <img src="golghar.jpeg" id="photu" className="d-block w-100" alt="..." />
         <div className="carousel-caption d-none d-md-block">
           <h3  style={{color:"white "}} className="responsive-font-example">Golghar,Patna</h3>
           <p  style={{color:"white "}}className="responsive-font-example">Some representative placeholder content for the first slide.</p>
         </div>
       </div>
-      <div className="carousel-item" data-bs-interval="1500">
+      <div className="carousel-item active" data-bs-interval="1000">
         <img src="jal mandir pawapuri Bihar.jpeg"  id="photu" className="d-block w-100" alt="..." />
         <div className="carousel-caption d-none d-md-block">
 
@@ -32,9 +32,7 @@ export default function biharTourismHome() {
           <p  style={{color:"white " }} className="responsive-font-example">Some representative placeholder content for the second slide.</p>
         </div>
       </div>
-      <div className="carousel-item" data-bs-interval="1500">
-
-        
+      <div className="carousel-item active" data-bs-interval="1000">        
         <img src="maahabodhi.jpg" id="photu" className="d-block w-100" alt="..."/>
         <div className="carousel-caption d-none d-md-block">
           <h3 style={{color:"white "}}className="responsive-font-example">Mahabodhi Temple , Gaya</h3>
@@ -58,7 +56,7 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card1 */}
-      <div className="card" style={{width:"18rem;"}}>
+      <div className="card" id="card1" style={{width:"18rem;"}}>
   <img src="nalanda_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Nalanda University</h5>
@@ -75,7 +73,7 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card2 */}
-      <div className="card" style={{width: "18rem;"}}>
+      <div className="card" id="card2" style={{width: "18rem;"}}>
   <img src="mahavir_mandir_755x450.jpeg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Mahaveer Mandir</h5>
@@ -89,7 +87,7 @@ export default function biharTourismHome() {
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card3 */}
-      <div className="card" style={{width: "18rem;"}}>
+      <div className="card" id="card3" style={{width: "18rem;"}}>
   <img src="Harmandir_Patna_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Harmandir sahib</h5>
@@ -110,7 +108,7 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card4 */}
-      <div className="card" style={{width:"18rem;"}}>
+      <div className="card" id="card4" style={{width:"18rem;"}}>
   <img src="chatth_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Chatth Puja</h5>
@@ -127,7 +125,7 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card5 */}
-      <div className="card" style={{width: "18rem;"}}>
+      <div className="card" id="card5" style={{width: "18rem;"}}>
   <img src="rajgir_755x450.jpg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Rajgir</h5>
@@ -141,7 +139,7 @@ export default function biharTourismHome() {
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card6 */}
-      <div className="card" style={{width: "18rem;"}}>
+      <div className="card" id="card6" style={{width: "18rem;"}}>
   <img src="gurpa_755x450.jpeg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Gurpa Hills</h5>
