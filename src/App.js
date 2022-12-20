@@ -32,6 +32,7 @@ isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai 
 
 <HeaderContainer/>
 <Cnvasacom/>
+
 {/*<TextForm/>*/}
 <BrowserRouter basename={process.env.PUBLIC_URL}>
 

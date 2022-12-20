@@ -63,7 +63,7 @@ export default function biharTourismHome() {
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
    
    
-    <NavLink to="/Nalanda" className="btn btn-primary">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
+    <NavLink to="/Nalanda" className="btn btn-primary" id="btn4">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
 </div>
@@ -78,7 +78,7 @@ export default function biharTourismHome() {
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}>Mahaveer Mandir</h5>
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Mahaveer"  className="btn btn-primary">Know In Details</NavLink>
+    <NavLink to="/Mahaveer"  className="btn btn-primary" id="btn3">Know In Details</NavLink>
     
   </div>
 </div>
@@ -92,7 +92,7 @@ export default function biharTourismHome() {
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}>Harmandir sahib</h5>
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Harmandir" className="btn btn-primary">Know In Details</NavLink>
+    <NavLink to="/Harmandir" className="btn btn-primary" id="btn2">Know In Details</NavLink>
     <Outlet/>
   </div>
 </div>
@@ -115,7 +115,7 @@ export default function biharTourismHome() {
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
    
    
-    <NavLink to="/chatthpuja" className="btn btn-primary">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
+    <NavLink to="/chatthpuja" className="btn btn-primary" id="btn1">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
 </div>
@@ -130,7 +130,7 @@ export default function biharTourismHome() {
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}>Rajgir</h5>
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Rajgir"  className="btn btn-primary">Know In Details</NavLink>
+    <NavLink to="/Rajgir"  className="btn btn-primary" id="btn5">Know In Details</NavLink>
     
   </div>
 </div>
@@ -144,7 +144,7 @@ export default function biharTourismHome() {
   <div className="card-body">
     <h5 className="card-title" style={{color:'green'}}>Gurpa Hills</h5>
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Gurpa" className="btn btn-primary">Know In Details</NavLink>
+    <NavLink to="/Gurpa" className="btn btn-primary" id="btn6">Know In Details</NavLink>
     <Outlet/>
   </div>
 </div>

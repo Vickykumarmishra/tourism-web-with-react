@@ -18,10 +18,10 @@ export default function Footer() {
         <div className="row">
           
           <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 className="text-uppercase mb-4 font-weight-bold">
+            <h6  className="text-uppercase mb-4 font-weight-bold">
               <i>Bihar Tourism</i>
             </h6>
-            <p>
+            <p id="para4">
               From its bustling cities to tranquil wilderness, Bihar has something for everyone. Visit this culturally rich and diverse state of India.
             </p>
           </div>
@@ -37,10 +37,10 @@ export default function Footer() {
          
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p><i className="fas fa-home mr-3"></i> Patna, Bihar, India</p>
-            <p><i className="fas fa-envelope mr-3"></i> info@gmail.com</p>
-            <p><i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p id="para5"><i className="fas fa-home mr-3"></i> Patna, Bihar, India</p>
+            <p id="para6"><i className="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p id="para7"><i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p id="para8"><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
           </div>
          
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">

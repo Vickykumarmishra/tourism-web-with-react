@@ -10,6 +10,105 @@
       content="Web site created using create-react-app"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+  $("#kala").on({
+
+    click: function(){
+       $("#darkMode").css({"background-color":"black"});
+       $("#kala").css({"background-color":"black","color":"green"});
+       $("#kala2").css({"background-color":"black","color":"green"});
+       $("#kala3").css({"background-color":"black","color":"green"});
+       $("#kala4").css({"background-color":"black","color":"green"});
+       $("#kala5").css({"background-color":"black","color":"green"});
+       $("#kala6").css({"background-color":"black","color":"green"});
+       $("#kala7").css({"background-color":"black","color":"green"});
+       $("#kala8").css({"background-color":"black","color":"green"});
+       $("#kala9").css({"background-color":"black","color":"green"});
+       $("#card1").css({"background-color":"black","border":"1px solid white"});
+       $("#card2").css({"background-color":"black","border":"1px solid white"});
+       $("#card3").css({"background-color":"black","border":"1px solid white"});
+       $("#card4").css({"background-color":"black","border":"1px solid white"});
+       $("#card5").css({"background-color":"black","border":"1px solid white"});
+       $("#card6").css({"background-color":"black","border":"1px solid white"});
+       $("#para1").css({"color":"green"});
+       $("#para2").css({"color":"green"});
+       $("#para3").css({"color":"green"});
+       $("#para4").css({"color":"green"});
+       $("#para5").css({"color":"green"});
+       $("#para6").css({"color":"green"});
+       $("#para7").css({"color":"green"});
+       $("#para8").css({"color":"green"});
+       $("#para9").css({"color":"green"});
+       $("#para10").css({"color":"green"});
+       $("#para11").css({"color":"green"});
+       $("#para12").css({"color":"green"});
+       $("#btn1").css({"background-color":"black","color":"green"});
+       $("#btn2").css({"background-color":"black","color":"green"});
+       $("#btn3").css({"background-color":"black","color":"green"});
+       $("#btn4").css({"background-color":"black","color":"green"});
+       $("#btn5").css({"background-color":"black","color":"green"});
+       $("#btn6").css({"background-color":"black","color":"green"});
+       $("h6").css({"color":"green"});
+    }
+  });
+  {/*Normal-mode*/}
+
+  $("#kala5").click(function(){
+    $("#darkMode").css({"background-color":"white"});
+       $("#kala").css({"background-color":"red","color":"white"});
+       $("#kala2").css({"background-color":"red","color":"white"});
+       $("#kala3").css({"background-color":"red","color":"white"});
+       $("#kala4").css({"background-color":"red","color":"white"});
+       $("#kala5").css({"background-color":"red","color":"white"});
+       $("#kala6").css({"background-color":"red","color":"white"});
+       $("#kala7").css({"background-color":"red","color":"white"});
+       $("#kala8").css({"background-color":"red","color":"white"});
+       $("#kala9").css({"background-color":"red","color":"white"});
+       $("#card1").css({"background-color":"white","border":"0.2px solid grey"});
+       $("#card2").css({"background-color":"white","border":"1px solid grey"});
+       $("#card3").css({"background-color":"white","border":"1px solid grey"});
+       $("#card4").css({"background-color":"white","border":"1px solid grey"});
+       $("#card5").css({"background-color":"white","border":"1px solid grey"});
+       $("#card6").css({"background-color":"white","border":"1px solid grey"});
+       $("#para1").css({"color":"green"});
+       $("#para2").css({"color":"green"});
+       $("#para3").css({"color":"green"});
+       $("#para4").css({"color":"white"});
+       $("#para5").css({"color":"white"});
+       $("#para6").css({"color":"white"});
+       $("#para7").css({"color":"white"});
+       $("#para8").css({"color":"white"});
+       $("#para9").css({"color":"green"});
+       $("#para10").css({"color":"green"});
+       $("#para11").css({"color":"green"});
+       $("#para12").css({"color":"green"});
+       //$("p").css({"color":"green"});
+       $("#btn1").css({"background-color":"blue","color":"white"});
+       $("#btn2").css({"background-color":"blue","color":"white"});
+       $("#btn3").css({"background-color":"blue","color":"white"});
+       $("#btn4").css({"background-color":"blue","color":"white"});
+       $("#btn5").css({"background-color":"blue","color":"white"});
+       $("#btn6").css({"background-color":"blue","color":"white"});
+       $("h6").css({"color":"white"});
+
+  })
+,
+  $("#kala5").on({
+    
+    mouseenter:(function(){
+    $("#card1").css({"background-color":"pink"});
+  }),mouseleave:(function(){
+
+    $("#card1").css({"background-color":"white"});
+  })
+
+});
+  
+});
+
+    </script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
    
@@ -20,11 +119,12 @@
     
    
   </head>
-  <body>
+  <body id="darkMode">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </script>
   </body>
 </html>

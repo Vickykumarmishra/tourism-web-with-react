@@ -9,12 +9,12 @@ export default function Mahaveer(props) {
 <HomeContainer/>
 
       
-      <p>As per the Patna High Court judgment in 1948 the temple exists since time immemorial. This temple gained popularity in 1947 with large number of Hindu refugees coming to Patna after the partition of India. Subsequently, temple was rebuilt as a concrete house at same time. Even this was broken down in 1987 to make a huge marble temple. The idol of Sankat-Mochan stands in it
+      <p id="para1" style={{color:"green"}}>As per the Patna High Court judgment in 1948 the temple exists since time immemorial. This temple gained popularity in 1947 with large number of Hindu refugees coming to Patna after the partition of India. Subsequently, temple was rebuilt as a concrete house at same time. Even this was broken down in 1987 to make a huge marble temple. The idol of Sankat-Mochan stands in it
       <br/><h4  style={{color:'green'}}>Dalit Priest</h4>
-<p>Since 13 June 1993, Suryavanshi Das, a person from dalit community, became priest of the temple, the decision taken received support from three well known priests—Ramchandra Paramahans, Mahant Avaidyanath of Baba Gorakhnath Dham and Mahant Avadh Kishore Das. {window.a}</p>
+<p id="para2" style={{color:"green"}}>Since 13 June 1993, Suryavanshi Das, a person from dalit community, became priest of the temple, the decision taken received support from three well known priests—Ramchandra Paramahans, Mahant Avaidyanath of Baba Gorakhnath Dham and Mahant Avadh Kishore Das. {window.a}</p>
       </p>
 
-      <p>
+      <p id="para3" style={{color:"green"}}>
         <br/>
       <h4  style={{color:'green'}}>Ram Rasoi</h4>
 Arrangements for free food have been made to the devotees who visit Ramlala at Ram Rasoi.[7] Acharya Kishore Kunal, secretary of the Shri Mahavir Sthan Nyas Samiti,[8] started it on Sunday 1 December 2019. This free food facility functions in the Amava temple just outside the temple of Ramlala, at Amawa Mandir Complex, Ramkot, Ayodhya-224123.[9] Devotees who visit Ramlala at Ram Rasoi get free food between 11:30 am till 3:00 pm every day.
