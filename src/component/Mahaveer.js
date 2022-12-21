@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Link,Outlet } from 'react-router-dom'
 import ladddu from './ladddu'
 import HomeContainer from '../containers/HomeContainer'
 export default function Mahaveer(props) {
@@ -23,8 +23,11 @@ For this, 60 quintals of Govind Bhog shear rice have been sent to Ayodhya.[10] T
 
       
       <NavLink to='MoreDetails' className='className="btn btn-primary"'>MoreDetails</NavLink>
+      <center><Link to="/BiharTourismHome"  class="btn btn-danger">Go-To-Home</Link></center>
       
       <Outlet />
+
+    
     </div>
   )
 }

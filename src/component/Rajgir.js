@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Rajgir() {
   return (
     <div>
@@ -15,6 +15,8 @@ The town is also notable in Jainism and also in  Buddhism.[4] It was the birthpl
 
 The ancient Nalanda university was located in the vicinity of Rajgir, and the contemporary Nalanda University named after it was founded in 2010 nearby. The town is also famed for its natural springs and towering hills that dominate the landscape.
       </p>
+      <center><Link to="/BiharTourismHome"  class="btn btn-danger">Go-To-Home</Link></center>
+      
     </div>
       
     

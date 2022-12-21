@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Chatthpuja() {
   return (
     <div>
@@ -17,6 +17,8 @@ export default function Chatthpuja() {
 
 पर्यावरणविदों का दावा है कि छठ[15] सबसे पर्यावरण-अनुकूल हिंदू त्यौहार है।[16][17] यह त्यौहार नेपाली और भारतीय लोगों द्वारा अपने डायस्पोरा के साथ मनाया जाता है।
       </p>
+      <center><Link to="/BiharTourismHome"  class="btn btn-danger">Go-To-Home</Link></center>
+      
     </div>
   )
 }

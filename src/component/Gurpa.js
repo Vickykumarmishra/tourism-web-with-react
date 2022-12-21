@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter,Link } from 'react-router-dom'
 
 export default function Gurpa() {
   return (
@@ -11,6 +12,12 @@ export default function Gurpa() {
 
 It is also considered to be one of the tallest peaks in the Gangetic plains. There is a rough steep path that leads to the summit. At the top of the mountain is a stupa and a Buddhist temple.[3] Many Buddhist pilgrims including Xuanzang have visited this place.[4]
       </p>
+
+
+      <center><Link to="/BiharTourismHome"  class="btn btn-danger">Go-To-Home</Link></center>
+      
+
+      
     </div>
   )
 }

@@ -16,7 +16,7 @@
   $("#kala").on({
 
     click: function(){
-       $("#darkMode").css({"background-color":"black"});
+       $("#darkMode").css({"background-color":"black"});//this id is inside body tag
        $("#kala").css({"background-color":"black","color":"green"});
        $("#kala2").css({"background-color":"black","color":"green"});
        $("#kala3").css({"background-color":"black","color":"green"});
@@ -99,6 +99,7 @@
 
   $("#kala5").click(function(){
     $("#darkMode").css({"background-color":"white"});
+   
        $("#kala").css({"background-color":"red","color":"white"});
        $("#kala2").css({"background-color":"red","color":"white"});
        $("#kala3").css({"background-color":"red","color":"white"});
@@ -193,7 +194,7 @@
     
    
   </head>
-  <body id="darkMode">
+  <body id="darkMode" >
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 

@@ -5,7 +5,6 @@ import { useState } from 'react';
 const b=1;
 export default function biharTourismHome() {
 
-
   
   return (
     <div>
