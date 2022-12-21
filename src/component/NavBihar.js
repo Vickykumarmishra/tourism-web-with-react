@@ -29,7 +29,7 @@ export default function NavBihar(props) {
        <div style={{}}>
         <form className="d-flex" role="search">
           
-           <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" alt='...' style={{height:'4rem'}} />
+           <img id="ecomm" src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" alt='...' style={{height:'4rem'}} />
            <span className="cart-count" style={{backgroundColor:"red",borderRadius:"50%",color:"white",height:'2rem'}}>{props.data.length}kg</span>
           </form>
           </div>
