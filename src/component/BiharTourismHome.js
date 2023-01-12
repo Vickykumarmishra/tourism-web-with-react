@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useState } from 'react';
-
+import { motion } from 'framer-motion';
 //import Nalanda from './Nalanda'
 const b=1;
 export default function biharTourismHome() {
@@ -56,7 +56,7 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card1 */}
-      <div className="card" id="card1" style={{width:"18rem;"}}>
+      <motion.div  whileHover={{scale:1.2}} className="card" id="card1" style={{width:"18rem;"}}>
   <img src="nalanda_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}>Nalanda University</h5>
@@ -66,14 +66,14 @@ export default function biharTourismHome() {
     <NavLink to="/Nalanda" className="btn btn-primary" id="btn4">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
-</div>
+</motion.div>
 
   </div>
 
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card2 */}
-      <div className="card" id="card2" style={{width: "18rem;"}}>
+      <motion.div  whileHover={{scale:1.2}} className="card" id="card2" style={{width: "18rem;"}}>
   <img src="mahavir_mandir_755x450.jpeg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}>Mahaveer Mandir</h5>
@@ -81,13 +81,13 @@ export default function biharTourismHome() {
     <NavLink to="/Mahaveer"  className="btn btn-primary" id="btn3">Know In Details</NavLink>
     
   </div>
-</div>
+</motion.div>
 </div>
 
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card3 */}
-      <div className="card" id="card3" style={{width: "18rem;"}}>
+      <motion.div whileHover={{scale:1.2}} className="card" id="card3" style={{width: "18rem;"}}>
   <img src="Harmandir_Patna_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}  animate={{x:'50px'}}>Harmandir sahib</h5>
@@ -95,7 +95,7 @@ export default function biharTourismHome() {
     <NavLink to="/Harmandir" className="btn btn-primary" id="btn2">Know In Details</NavLink>
     <Outlet/>
   </div>
-</div>
+</motion.div>
 
     </div>
   </div>
@@ -108,7 +108,7 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card4 */}
-      <div className="card" id="card4" style={{width:"18rem;"}}>
+      <motion.div whileHover={{scale:1.2}} className="card" id="card4" style={{width:"18rem;"}}>
   <img src="chatth_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}>Chatth Puja</h5>
@@ -118,14 +118,14 @@ export default function biharTourismHome() {
     <NavLink to="/chatthpuja" className="btn btn-primary" id="btn1">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
-</div>
+</motion.div>
 
   </div>
 
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card5 */}
-      <div className="card" id="card5" style={{width: "18rem;"}}>
+      <motion.div whileHover={{scale:1.2}} className="card" id="card5" style={{width: "18rem;"}}>
   <img src="rajgir_755x450.jpg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'green'}}>Rajgir</h5>
@@ -133,13 +133,13 @@ export default function biharTourismHome() {
     <NavLink to="/Rajgir"  className="btn btn-primary" id="btn5">Know In Details</NavLink>
     
   </div>
-</div>
+</motion.div>
 </div>
 
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card6 */}
-      <div className="card" id="card6" style={{width: "18rem;"}}>
+      <motion.div whileHover={{scale:1.2}} className="card" id="card6" style={{width: "18rem;"}}>
   <img src="gurpa_755x450.jpeg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title" style={{color:'green'}} >Gurpa Hills</h5>
@@ -147,7 +147,7 @@ export default function biharTourismHome() {
     <NavLink to="/Gurpa" className="btn btn-primary" id="btn6">Know In Details</NavLink>
     <Outlet/>
   </div>
-</div>
+</motion.div>
 
     </div>
   </div>
