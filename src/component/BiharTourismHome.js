@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useState } from 'react';
+import {motion} from 'framer-motion';
 //import Nalanda from './Nalanda'
 const b=1;
 export default function biharTourismHome() {
@@ -89,7 +90,7 @@ export default function biharTourismHome() {
       <div className="card" id="card3" style={{width: "18rem;"}}>
   <img src="Harmandir_Patna_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title"  style={{color:'green'}}>Harmandir sahib</h5>
+    <h5 className="card-title"  style={{color:'green'}}  animate={{x:'50px'}}>Harmandir sahib</h5>
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <NavLink to="/Harmandir" className="btn btn-primary" id="btn2">Know In Details</NavLink>
     <Outlet/>
@@ -139,9 +140,9 @@ export default function biharTourismHome() {
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card6 */}
       <div className="card" id="card6" style={{width: "18rem;"}}>
-  <img src="gurpa_755x450.jpeg" className="card-img-top" alt="..."/>
+  <motion.img src="gurpa_755x450.jpeg" animate={{rotate:[0,360,0]}} className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title" style={{color:'green'}}>Gurpa Hills</h5>
+    <h5 className="card-title" style={{color:'green'}} >Gurpa Hills</h5>
     <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <NavLink to="/Gurpa" className="btn btn-primary" id="btn6">Know In Details</NavLink>
     <Outlet/>

@@ -6,7 +6,7 @@ export default function Login() {
     <div>
       <BrowserRouter>
        
-       <Link to='/BiharTourismHome'><button type='submit' className="btn btn-outline-success">Login</button></Link>
+       <Link to='/BiharTourismHome'><button type='submit' className="btn btn-outline-success" id="log">Login</button></Link>
     
       </BrowserRouter>
      

@@ -2,7 +2,7 @@
 import './App.css';
 //import TextForm from './component/TextForm';
 /*import Field from './component/Field';*/
-
+import { motion } from 'framer-motion';
 import Form from './component/Form';
 import BiharTourismHome from './component/BiharTourismHome';
 import Cnvasacom from './component/Cnvasacom';
@@ -80,6 +80,8 @@ isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai 
 
       
     <Footer/> 
+
+    
     </>
   );
 }
