@@ -19,6 +19,7 @@ import HomeContainer from './containers/HomeContainer';
 import Chatthpuja from './component/Chatthpuja';
 import Rajgir from './component/Rajgir';
 import Gurpa from './component/Gurpa';
+import { motion } from 'framer-motion';
 function App() {
   return (
    <>
