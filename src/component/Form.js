@@ -3,6 +3,7 @@ import React from "react";
 import {  Link } from "react-router-dom";
 import {useFormik} from 'formik'; //install formik before starting
 import * as Yup from 'yup'
+
 window.a=0//global declaration,isko kahi v likhenge to ye global hi kahlayega
 const Form = () => {
   
@@ -49,7 +50,7 @@ email:Yup.string()
 
 
      
-   <center><div className="container">
+   <center><div className="container" >
         
        <form  className="btn btn-outline-success" style={{backgroundColor:"black"}} onSubmit={formik.handleSubmit}>
 
