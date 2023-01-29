@@ -25,23 +25,8 @@ export default function ladddu(props) {
        {/**i have used grid here from bootstrap */}
       <div class="container">
   <div class="row">
-    
-    <div class="col"  style={{ border:'0.2rem solid green',padding:'2rem' ,color:'green', marginBottom:'2rem'}}>
-   <center>  <h3 style={{color:"blue"}}>Billing:</h3></center><br/>
-   
-   Enter the quantity:<input type='text' id='bill'/><br/><br/>
-   Enter Todays Rate:<input type='text' id='rate'/><br/><br/>
-   Today's Discount%:<input type='text' id='discount'/><br/><br/>
-   <center><button onClick={billing} className="btn btn-outline-success">Submit</button>
-   <button className="btn btn-outline-success" onClick={clear}>clear</button></center>
-   <p style={{color:'red'}}>please verify the quantity from cart at top before billing(for small devices click hamburger icon on top to see cart)</p>
-   <p id='pari'></p>
-   <p id='pari2'></p>
 
-      
-    </div>
-
-    <div class="col" style={{marginBottom:"2rem"}}>
+  <div class="col" style={{marginBottom:"2rem"}}>
     <center>  <motion.h3  animate={{scale:1.2}}  transition={{duration:1,repeat:Infinity}} style={{color:"green"}}><b>Order prasad at your home</b></motion.h3></center>
     <center> <img src="laddu.jpg" className='img-thumbnail' alt="..." /></center>
   
@@ -53,6 +38,25 @@ export default function ladddu(props) {
         Add To Cart+</motion.button>
     </center>
     </div>
+    
+    <div class="col"  style={{ border:'0.2rem solid green', borderRadius:'1rem' , padding:'2rem' ,color:'green', marginBottom:'2rem'}}>
+   <center>  <h3 style={{color:"blue"}}>Billing:</h3><br/>
+   
+   quantity:<input type='text' placeholder="enter quantity purchased" id='bill'/><br/><br/>
+   Todays Rate:<input type='text' id='rate'/><br/><br/>
+   Discount%:<input type='text' id='discount' placeholder="Todays discount is 12%" /><br/><br/>
+   <center><button onClick={billing} className="btn btn-danger">Submit</button>
+   <button className="btn btn-primary" onClick={clear}>clear</button></center>
+   <p style={{color:'red'}}>please verify the quantity from cart at top before billing(for small devices click hamburger icon on top to see cart)</p>
+   <p id='pari'></p>
+   <p id='pari2'></p>
+
+   </center>
+
+      
+    </div>
+
+    
     
   </div>
 </div>
