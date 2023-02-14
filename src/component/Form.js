@@ -3,6 +3,7 @@ import React from "react";
 import {  Link } from "react-router-dom";
 import {useFormik} from 'formik'; //install formik before starting
 import * as Yup from 'yup'
+import { motion } from "framer-motion";
 
 window.a=0//global declaration,isko kahi v likhenge to ye global hi kahlayega
 const Form = () => {
@@ -50,9 +51,10 @@ email:Yup.string()
 
 
      
-   <center><div className="container" >
+   <center><div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
+    
         
-       <form  className="btn btn-outline-success" style={{backgroundColor:"black"}} onSubmit={formik.handleSubmit}>
+       <form  className="btn btn-outline-success" style={{backgroundColor:"purple"}} onSubmit={formik.handleSubmit}>
 
        <div class="input-group">
   <span class="input-group-text">First and last name</span>
@@ -65,26 +67,27 @@ email:Yup.string()
         <br/>
 
         <div class="mb-3">
-  <label for="exampleFormControlInput1" className="form-label">Email address</label>
+  <label for="exampleFormControlInput1" className="form-label" style={{color:'white'}}>Email address</label>
   <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name='email' onChange={formik.handleChange} value={formik.values.email}/>
 </div>
 {formik.errors.email && <p style={{color:'red'}}> {formik.errors.email}</p>}     
         <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label" style={{color:'white'}}>Password</label>
     <div class="col-sm-10">
       <input type="password" class="form-control" id="inputPassword" name='password' onChange={formik.handleChange}  value={formik.values.password}/>
     </div>
   </div>
-  {formik.errors.password && <p style={{color:'red'}}> {formik.errors.password}</p>}     
-        
+  {formik.errors.password && <p style={{color:'red'}}> {formik.errors.password}</p>}   
+
+  <motion.p  animate={{scale:1.2,color:'yellow'}} initial={{scale:1,color:'red'}} transition={{duration:1,repeat:Infinity}} style={{color:'red'} }>Double click to save your data</motion.p>
       <br></br>
       {
-     window.a==0?<button type='submit' className="btn btn-outline-success"  id="savedata" >SaveData</button>:<h1></h1>
+     window.a==0?<button type='submit' className="btn btn-primary"  id="savedata"  style={{color:'white'}}>SaveData</button>:<h1></h1>
       }
  
       {
     
-        window.b==1?<Link to='/BiharTourismHome' > <button type='button' className="btn btn-outline-success" >Login</button></Link>:<h1></h1>
+        window.b==1?<Link to='/BiharTourismHome' > <button type='button' className="btn btn-warning" >Login</button></Link>:<h1></h1>
         //back karke dobara is login page par ayenge to a ka value
         
       }
