@@ -31,11 +31,20 @@ export default function ladddu(props) {
     <center> <img src="laddu.jpg" className='img-thumbnail' alt="..." /></center>
   
     <center><p style={{color:'red'}}>Laddu,Price:100,12% discount on total amount</p><center/>
+    
     <motion.button    animate={{scale:1.2}}  transition={{duration:0.7,repeat:Infinity}} id="buttn" type='submit'className="btn btn-outline-success"
-     onClick={
+    onClick={
       ()=>{props.addToCartHandler({price:100,name:'Laddu'})}
-      }>
-        Add To Cart+</motion.button>
+      }    >
+
+        Add To Cart+  </motion.button>
+
+        <button   style={{marginLeft:'0.5rem'}} id="buttn" type='submit'className="btn btn-success"
+    onClick={
+      ()=>{props.removeToCartHandler()}
+      }    >
+
+        Remove From Cart+  </button>
     </center>
     </div>
     
