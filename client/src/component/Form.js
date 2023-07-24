@@ -1,109 +1,116 @@
 
 import React from "react";
-import {  Link } from "react-router-dom";
-import {useFormik} from 'formik'; //install formik before starting
-import * as Yup from 'yup'
-import { motion } from "framer-motion";
+import { useState } from "react";
+import {  Link, NavLink } from "react-router-dom";
+import { motion } from "framer-motion"
 
-window.a=0//global declaration,isko kahi v likhenge to ye global hi kahlayega
-const Form = () => {
+import { useNavigate } from 'react-router-dom';
+
+
+export default function Form(){
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [passw, setPass] = useState("");
+  const navigate = useNavigate();
   
-  //console.log(window.a+'is value of a before onsubmit')
-  const formik= useFormik({
-    initialValues: {
-    firstName:'',
-    lastName:'',
-    password:'',
-    email:'',
-    },
+  function handleName() {
 
-    validationSchema:Yup.object({
-firstName:Yup.string().max(10,'firstName must be less than equal to 10 characters')
-.required('this is required field'),
+    let named = document.getElementById("name").value;
+    let emailed = document.getElementById("email").value;
+    let password = document.getElementById("passwords").value;
+    setName(named);
+    setEmail(emailed);
+    setPass(password);
 
-password:Yup.string().min(6,'password must be of atleast 6 digit ')
-.required('password is required'),
+  }
 
-email:Yup.string()
-.email('please fill valid email')
-.required("this field is required"),
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
 
+    const url="https://lazy-pink-goshawk-ring.cyclic.app/posst"
 
-    }),
-   
-    onSubmit:(values)=>{//onsubmit has access to form's values
-      //console.log('value of a inside onsubmit='+ window.a);
-      console.log("form submitted",values);
-       window.a=1
-      //console.log('value of a inside onsubmit='+window.a);
-      window.b=1
-      //console.log(window.b);
-      
-    },
+    if(name==''||email==''||passw==''){
+      alert('Please fill all the details before submission!')
+    }
+    else if(name!=''||email!=''||passw!=''){
+      fetch(url, {
+        method: "POST",
+        //mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+          
+        },
+        body: JSON.stringify({ name, email, passw }),
+        
+      })
+        .then(() => {
+          console.log("Data updated successfully");
+        })
+        .catch((error) => {
+          console.error("Error updating data:", error);
+        });
+        alert('data saved to database successfully')   
+        navigate('/BiharTourismHome'); 
+    }
+  
+  
     
-    
-  });
-  //console.log('value of a outside ='+ window.a); 
-
-  console.log(formik.errors)
+       
+}
    return (
     
-
-
-     
    <center><div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
     
         
-       <form  className="btn btn-outline-success" style={{backgroundColor:"purple"}} onSubmit={formik.handleSubmit}>
-
-       <div class="input-group">
-  <span class="input-group-text">First and last name</span>
-  <input type="text" aria-label="First name" class="form-control" name='firstName' onChange={formik.handleChange} value={formik.values.firstName}/> {/**jaise jaise input dalenge vo update hota jayega */}
-  <br/>
-  <input type="text" aria-label="Last name" class="form-control" name='lastName' onChange={formik.handleChange} value={formik.values.lastName}/>  {/**jaise jaise input dalenge vaise vaise value update hota jayega */}
-  
-</div>
-{formik.errors.firstName && <p style={{color:'red'}}> {formik.errors.firstName}</p>}     
-        <br/>
-
-        <div class="mb-3">
-  <label for="exampleFormControlInput1" className="form-label" style={{color:'white'}}>Email address</label>
-  <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name='email' onChange={formik.handleChange} value={formik.values.email}/>
-</div>
-{formik.errors.email && <p style={{color:'red'}}> {formik.errors.email}</p>}     
-        <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label" style={{color:'white'}}>Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword" name='password' onChange={formik.handleChange}  value={formik.values.password}/>
+    <div
+      className="container"
+      style={{
+        border: "0.1rem solid #149914",
+        width: "20rem",
+        marginTop: "2rem",
+        borderRadius:"0.5rem"
+      }}
+    >
+      <h1 style={{ marginBottom: "2rem" ,color:'#149914'}}>
+        <b>Login Page</b>
+      </h1>
+      <form onSubmit={handleSubmit} style={{color:'#149914'}}>
+        Name :
+        <input
+          name="name"
+          id="name"
+          onChange={handleName}
+          style={{ width: "12rem" }}
+        />
+        <br /> <br />
+        Email :
+        <input
+          name="email"
+          id="email"
+          onChange={handleName}
+          style={{ width: "12rem" }}
+        />
+        <br />
+        <br />
+        Password:
+        <input
+          type="password"
+          name="password"
+          id="passwords"
+          onChange={handleName}
+          style={{ width: "11rem" }}
+        />
+        <br />
+        <br />
+    <button type="submit" className="btn btn-danger" style={{ backgroundColor: "#149914", marginBottom: "1rem", marginLeft: "2rem"}} >Submit{" "}</button>
+      </form>
     </div>
-  </div>
-  {formik.errors.password && <p style={{color:'red'}}> {formik.errors.password}</p>}   
-
-  <motion.p  animate={{scale:1.2,color:'yellow'}} initial={{scale:1,color:'red'}} transition={{duration:1,repeat:Infinity}} style={{color:'red'} }>Double click to save your data</motion.p>
-      <br></br>
-      {
-     window.a==0?<button type='submit' className="btn btn-primary"  id="savedata"  style={{color:'white'}}>SaveData</button>:<h1></h1>
-      }
- 
-      {
-    
-        window.b==1?<Link to='/BiharTourismHome' > <button type='button' className="btn btn-warning" >Login</button></Link>:<h1></h1>
-        //back karke dobara is login page par ayenge to a ka value
-        
-      }
-  
-  
-   
-      {/*we cannot use className with Link, to use className we will write 'Navlink' in place of Link */}
-       </form>
-       {/*we should not import browse,Link,Route etc , unless and until we have to use. */}
-      
        
        
        </div></center>  
    )
- }
- export default Form;
+        }
+
 
 /*useEffect :https://www.w3schools.com/react/react_useeffect.asp */
 /*react */
