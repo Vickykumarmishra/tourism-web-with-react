@@ -10,29 +10,29 @@ import { useNavigate } from 'react-router-dom';
 export default function Form(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [addrs, setAdd] = useState("");
+  const [address, setAdd] = useState("");
   const navigate = useNavigate();
   
   function handleName() {
 
     let named = document.getElementById("name").value;
     let emailed = document.getElementById("email").value;
-    let address = document.getElementById("address").value;
+    let addressed = document.getElementById("address").value;
     setName(named);
     setEmail(emailed);
-    setAdd(address);
+    setAdd(addressed);
 
   }
 
   function handleSubmit(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
-    const url="https://lazy-pink-goshawk-ring.cyclic.app/posst"
-
-    if(name==''||email==''||addrs==''){
+   // const url="https://lazy-pink-goshawk-ring.cyclic.app/posst"
+     const url="https://fierce-clam-tuxedo.cyclic.app/posst"
+    if(name==''||email==''||address==''){
       alert('Please fill all the details before submission!')
     }
-    else if(name!=''||email!=''||addrs!=''){
+    else if(name!=''||email!=''||address!=''){
       fetch(url, {
         method: "POST",
         //mode: "no-cors",
@@ -40,7 +40,7 @@ export default function Form(){
           "Content-Type": "application/json",
           
         },
-        body: JSON.stringify({ name, email, addrs }),
+        body: JSON.stringify({ name, email, address }),
         
       })
         .then(() => {
@@ -95,7 +95,7 @@ export default function Form(){
         Address:
         <input
          
-          name="Address"
+          name="address"
           id="address"
           onChange={handleName}
           style={{ width: "11rem" }}
