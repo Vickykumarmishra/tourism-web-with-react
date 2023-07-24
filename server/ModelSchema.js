@@ -5,4 +5,4 @@ const PrithviSchema= mongoose.Schema({
     add:String
 });
 
-module.exports=mongoose.model('visitors',PrithviSchema);
+module.exports=mongoose.model('details',PrithviSchema);
