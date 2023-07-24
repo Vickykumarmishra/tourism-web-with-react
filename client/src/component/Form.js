@@ -27,8 +27,7 @@ export default function Form(){
   function handleSubmit(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
-   // const url="https://lazy-pink-goshawk-ring.cyclic.app/posst"
-     const url="https://fierce-clam-tuxedo.cyclic.app/posst"
+  const url="https://rich-pear-termite-fez.cyclic.app/posst"
     if(name==''||email==''||address==''){
       alert('Please fill all the details before submission!')
     }
