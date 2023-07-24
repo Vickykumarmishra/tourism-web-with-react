@@ -10,17 +10,17 @@ import { useNavigate } from 'react-router-dom';
 export default function Form(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [passw, setPass] = useState("");
+  const [add, setAdd] = useState("");
   const navigate = useNavigate();
   
   function handleName() {
 
     let named = document.getElementById("name").value;
     let emailed = document.getElementById("email").value;
-    let password = document.getElementById("passwords").value;
+    let address = document.getElementById("address").value;
     setName(named);
     setEmail(emailed);
-    setPass(password);
+    setAdd(address);
 
   }
 
@@ -29,10 +29,10 @@ export default function Form(){
 
     const url="https://lazy-pink-goshawk-ring.cyclic.app/posst"
 
-    if(name==''||email==''||passw==''){
+    if(name==''||email==''||add==''){
       alert('Please fill all the details before submission!')
     }
-    else if(name!=''||email!=''||passw!=''){
+    else if(name!=''||email!=''||add!=''){
       fetch(url, {
         method: "POST",
         //mode: "no-cors",
@@ -40,7 +40,7 @@ export default function Form(){
           "Content-Type": "application/json",
           
         },
-        body: JSON.stringify({ name, email, passw }),
+        body: JSON.stringify({ name, email, add }),
         
       })
         .then(() => {
@@ -72,7 +72,7 @@ export default function Form(){
       }}
     >
       <h1 style={{ marginBottom: "2rem" ,color:'#149914'}}>
-        <b>Login Page</b>
+        <b>Enter Details</b>
       </h1>
       <form onSubmit={handleSubmit} style={{color:'#149914'}}>
         Name :
@@ -92,11 +92,11 @@ export default function Form(){
         />
         <br />
         <br />
-        Password:
+        Address:
         <input
-          type="password"
-          name="password"
-          id="passwords"
+         
+          name="Address"
+          id="address"
           onChange={handleName}
           style={{ width: "11rem" }}
         />
