@@ -1,11 +1,9 @@
 
 import './App.css';
-//import TextForm from './component/TextForm';
-
 import Form from './component/Form';
 import BiharTourismHome from './component/BiharTourismHome';
-import Cnvasacom from './component/Cnvasacom';
-//import HideShow from './component/HideShow';
+import Buttons from './component/Buttons';
+import SignUp from './component/SignUp';
 import {BrowserRouter , Routes,Route} from 'react-router-dom'
 import NavBihar from './component/NavBihar';
 import Footer from './component/Footer';
@@ -31,7 +29,7 @@ props.title likha hai jisse ye hoga ki ham navbar component k title ko change ka
 isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai aur unme apne jarurat k hisab se koi change v kar sakte hai. */}
 
 <HeaderContainer/>
-<Cnvasacom/>
+<Buttons/>
 
 {/*<TextForm/>*/}
 <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -52,6 +50,7 @@ isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai 
   <Route path="BiharTourismHome/" element={<BiharTourismHome />}> </Route> 
   <Route path='Harmandir' element={<Harmandir/>}></Route>  
   <Route path='/Nalanda' element={<Nalanda/>}></Route>
+  <Route path='/SignUp' element={<SignUp/>}></Route>
   <Route path='Chatthpuja' element={<Chatthpuja/>}></Route>  
   <Route path='Rajgir' element={<Rajgir/>}></Route> 
   <Route path='Gurpa' element={<Gurpa/>}></Route>  

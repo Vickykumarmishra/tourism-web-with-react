@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter,Link } from 'react-router-dom'
-import Cnvasacom from './Cnvasacom';
+import Buttons from './Buttons';
 export default function NavBihar(props) {
 
   
