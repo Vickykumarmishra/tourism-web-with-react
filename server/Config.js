@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const MONGO_URI='mongodb+srv://mishravicky0141:6HXVUMovOaehWCZY@cluster0.vizd2yg.mongodb.net/info'
+const MONGO_URI='mongodb+srv://mishravicky0141:6HXVUMovOaehWCZY@cluster0.vizd2yg.mongodb.net/visitors'
 
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
