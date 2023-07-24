@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Form(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [add, setAdd] = useState("");
+  const [addrs, setAdd] = useState("");
   const navigate = useNavigate();
   
   function handleName() {
@@ -29,10 +29,10 @@ export default function Form(){
 
     const url="https://lazy-pink-goshawk-ring.cyclic.app/posst"
 
-    if(name==''||email==''||add==''){
+    if(name==''||email==''||addrs==''){
       alert('Please fill all the details before submission!')
     }
-    else if(name!=''||email!=''||add!=''){
+    else if(name!=''||email!=''||addrs!=''){
       fetch(url, {
         method: "POST",
         //mode: "no-cors",
@@ -40,7 +40,7 @@ export default function Form(){
           "Content-Type": "application/json",
           
         },
-        body: JSON.stringify({ name, email, add }),
+        body: JSON.stringify({ name, email, addrs }),
         
       })
         .then(() => {

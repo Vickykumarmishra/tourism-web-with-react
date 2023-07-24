@@ -2,7 +2,7 @@ const mongoose= require('mongoose');
 const PrithviSchema= mongoose.Schema({
     name:String,
     email:String,
-    add:String
+    addrs:String
 });
 
-module.exports=mongoose.model('users',PrithviSchema);
+module.exports=mongoose.model('details',PrithviSchema);
