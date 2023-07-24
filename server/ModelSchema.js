@@ -1,8 +1,9 @@
 const mongoose= require('mongoose');
-const PrithviSchema= mongoose.Schema({
+const VasuSchema= mongoose.Schema({
     name:String,
     email:String,
     addrs:String
 });
 
-module.exports=mongoose.model('details',PrithviSchema);
+module.exports=mongoose.model('details',VasuSchema);
+
