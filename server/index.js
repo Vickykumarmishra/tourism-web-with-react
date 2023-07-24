@@ -18,7 +18,7 @@ app.post("/posst", async (req, res) => {
   let result = await data.save();
 
   res.send(result);
-});d
+});
 
 app.listen((4000),()=>{
   console.log('Connected');
