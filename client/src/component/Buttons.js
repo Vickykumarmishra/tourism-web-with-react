@@ -32,7 +32,7 @@ export default function Buttons() {
 <motion.button  whileHover={{scale:1.2}} className="btn btn-danger" id="kala" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}>Dark-Mode</motion.button>&nbsp;&nbsp;
 
 <motion.button whileHover={{scale:1.2}} className="btn btn-danger" id="kala5" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}>Normal-Mode</motion.button>&nbsp;&nbsp;
-<motion.button whileHover={{scale:1.2}} className="btn btn-danger" id="kala7" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}><a href='/' style={{color:'white'}}>LogIn</a></motion.button>&nbsp;&nbsp;
+<motion.button whileHover={{scale:1.2}} className="btn btn-danger" id="kala7" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}><a href='/' style={{color:'white'}}>UsersDetailsEntry</a></motion.button>&nbsp;&nbsp;
 <BrowserRouter>
 
 </BrowserRouter>
