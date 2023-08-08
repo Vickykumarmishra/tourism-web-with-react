@@ -14,7 +14,7 @@ export default function Buttons() {
 
      {/**canvas starts here */}
 
-  <motion.button whileHover={{scale:1.2}}  className="btn btn-danger"  id="kala2" style={{marginLeft:"0.5em",marginBottom:"1rem"}} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">AboutUs</motion.button>
+  <motion.button whileHover={{scale:1.2}}  className="btn btn-danger"  id="kala2" style={{marginLeft:"0.5em",marginBottom:"1rem"}} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">AboutUs</motion.button>&nbsp;&nbsp;
 
 <div className="offcanvas offcanvas-top" style={{backgroundColor:'white'}} data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div className="offcanvas-header">
@@ -29,12 +29,12 @@ export default function Buttons() {
 {/**canvas ends */}
 
 
-<motion.button  whileHover={{scale:1.2}} className="btn btn-danger" id="kala" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}>Dark-Mode</motion.button>
-<motion.button whileHover={{scale:1.2}} className="btn btn-danger"  id="kala4" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}>Contact</motion.button>
-<motion.button whileHover={{scale:1.2}} className="btn btn-danger" id="kala5" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}>Normal-Mode</motion.button>
-<motion.button whileHover={{scale:1.2}} className="btn btn-danger" id="kala7" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}><a href='/' style={{color:'white'}}>LogIn</a></motion.button>
+<motion.button  whileHover={{scale:1.2}} className="btn btn-danger" id="kala" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}>Dark-Mode</motion.button>&nbsp;&nbsp;
+
+<motion.button whileHover={{scale:1.2}} className="btn btn-danger" id="kala5" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}>Normal-Mode</motion.button>&nbsp;&nbsp;
+<motion.button whileHover={{scale:1.2}} className="btn btn-danger" id="kala7" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}><a href='/' style={{color:'white'}}>LogIn</a></motion.button>&nbsp;&nbsp;
 <BrowserRouter>
-<motion.button  whileHover={{scale:1.2}} className="btn btn-danger" id="kala8" style={{marginLeft:"0.5rem",marginBottom:"1rem"}}><a href="/SignUp" style={{color:'white'}}>SignUp</a></motion.button>
+
 </BrowserRouter>
     </div></center>
   )
