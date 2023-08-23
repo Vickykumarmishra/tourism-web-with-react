@@ -10,7 +10,7 @@ export default function biharTourismHome() {
   return (
     <div>
    
-<div id="carouselExampleDark" className="carousel carousel-dark slide" style={{border:"2px solid blue"}} data-bs-ride="carousel">
+<div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel" style={{}}>
     <div className="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -56,14 +56,14 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card1 */}
-      <motion.div  whileHover={{scale:1.2}} className="card" id="card1" style={{width:"18rem;"}}>
+      <motion.div  whileHover={{scale:1.1}} className="card" id="card1" style={{width:"18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="nalanda_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title"  style={{color:'green'}}>Nalanda University</h5>
-    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title"  style={{color:'white'}}>Nalanda University</h5>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
    
    
-    <NavLink to="/Nalanda" className="btn btn-primary" id="btn4">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
+    <NavLink to="/Nalanda" className="btn btn-outline-light" id="btn4">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
 </motion.div>
@@ -73,12 +73,12 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card2 */}
-      <motion.div  whileHover={{scale:1.2}} className="card" id="card2" style={{width: "18rem;"}}>
+      <motion.div  whileHover={{scale:1.1}} className="card" id="card2" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="mahavir_mandir_755x450.jpeg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title"  style={{color:'green'}}>Mahaveer Mandir</h5>
-    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Mahaveer"  className="btn btn-primary" id="btn3">Know In Details</NavLink>
+    <h5 className="card-title"  style={{color:'white'}}>Mahaveer Mandir</h5>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <NavLink to="/Mahaveer"  className="btn btn-outline-light" id="btn3">Know In Details</NavLink>
     
   </div>
 </motion.div>
@@ -87,12 +87,12 @@ export default function biharTourismHome() {
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card3 */}
-      <motion.div whileHover={{scale:1.2}} className="card" id="card3" style={{width: "18rem;"}}>
+      <motion.div whileHover={{scale:1.1}} className="card" id="card3" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="Harmandir_Patna_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title"  style={{color:'green'}}  animate={{x:'50px'}}>Harmandir sahib</h5>
-    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Harmandir" className="btn btn-primary" id="btn2">Know In Details</NavLink>
+    <h5 className="card-title"  style={{color:'white'}}  animate={{x:'50px'}}>Harmandir sahib</h5>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <NavLink to="/Harmandir" className="btn btn-outline-light" id="btn2">Know In Details</NavLink>
     <Outlet/>
   </div>
 </motion.div>
@@ -108,14 +108,14 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card4 */}
-      <motion.div whileHover={{scale:1.2}} className="card" id="card4" style={{width:"18rem;"}}>
-  <img src="chatth_755x450.jpg" className="card-img-top" alt="..."/>
+      <motion.div whileHover={{scale:1.1}} className="card" id="card4" style={{width:"18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
+  <img src="chatth.webp" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title"  style={{color:'green'}}>Chatth Puja</h5>
-    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title"  style={{color:'white'}}>Chatth Puja</h5>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
    
    
-    <NavLink to="/chatthpuja" className="btn btn-primary" id="btn1">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
+    <NavLink to="/chatthpuja" className="btn btn-outline-light" id="btn1">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
 </motion.div>
@@ -125,12 +125,12 @@ export default function biharTourismHome() {
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card5 */}
-      <motion.div whileHover={{scale:1.2}} className="card" id="card5" style={{width: "18rem;"}}>
+      <motion.div whileHover={{scale:1.1}} className="card" id="card5" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="rajgir_755x450.jpg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title"  style={{color:'green'}}>Rajgir</h5>
-    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Rajgir"  className="btn btn-primary" id="btn5">Know In Details</NavLink>
+    <h5 className="card-title"  style={{color:'white'}}>Rajgir</h5>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <NavLink to="/Rajgir"  className="btn btn-outline-light" id="btn5">Know In Details</NavLink>
     
   </div>
 </motion.div>
@@ -139,12 +139,12 @@ export default function biharTourismHome() {
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card6 */}
-      <motion.div whileHover={{scale:1.2}} className="card" id="card6" style={{width: "18rem;"}}>
+      <motion.div whileHover={{scale:1.1}} className="card" id="card6" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="gurpa_755x450.jpeg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title" style={{color:'green'}} >Gurpa Hills</h5>
-    <p className="card-text"  style={{color:'green'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <NavLink to="/Gurpa" className="btn btn-primary" id="btn6">Know In Details</NavLink>
+    <h5 className="card-title" style={{color:'white'}} >Gurpa Hills</h5>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <NavLink to="/Gurpa" className="btn btn-outline-light" id="btn6">Know In Details</NavLink>
     <Outlet/>
   </div>
 </motion.div>

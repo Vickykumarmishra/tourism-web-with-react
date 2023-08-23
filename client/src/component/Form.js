@@ -58,55 +58,55 @@ export default function Form(){
 }
    return (
     
-   <center><div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
+   <center><motion.div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
     
         
-    <div
+    <motion.div
       className="container"
       style={{
-        border: "0.1rem solid #149914",
+        border: "0.1rem solid white",
         width: "20rem",
         marginTop: "2rem",
-        borderRadius:"0.5rem"
-      }}
+        borderRadius:"0.5rem",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'
+      }}   whileHover={{scale:1.1}}
     >
-      <h1 style={{ marginBottom: "2rem" ,color:'#149914'}}>
+      <h1 style={{ marginBottom: "2rem" ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
         <b>Enter Details</b>
       </h1>
-      <form onSubmit={handleSubmit} style={{color:'#149914'}}>
+      <form onSubmit={handleSubmit} style={{color:'white'}}>
         Name :
-        <input
+        <motion.input
           name="name"
           id="name"
           onChange={handleName}
-          style={{ width: "12rem" }}
+          style={{ width: "12rem" ,borderRadius:'0.5rem'}}  whileHover={{scale:1.1}}
         />
         <br /> <br />
         Email :
-        <input
+        <motion.input
           name="email"
           id="email"
           onChange={handleName}
-          style={{ width: "12rem" }}
+          style={{ width: "12rem",borderRadius:'0.5rem' }} whileHover={{scale:1.1}}
         />
         <br />
         <br />
         Address:
-        <input
+        <motion.input
          
           name="address"
           id="address"
           onChange={handleName}
-          style={{ width: "11rem" }}
+          style={{ width: "11rem" ,borderRadius:'0.5rem'}} whileHover={{scale:1.1}}
         />
         <br />
         <br />
-    <button type="submit" className="btn btn-danger" style={{ backgroundColor: "#149914", marginBottom: "1rem", marginLeft: "2rem"}} >Submit{" "}</button>
+    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} >Submit{" "}</motion.button>
       </form>
-    </div>
+    </motion.div>
        
        
-       </div></center>  
+       </motion.div></center>  
    )
         }
 

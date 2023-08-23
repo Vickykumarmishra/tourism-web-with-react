@@ -7,11 +7,11 @@ export default function Footer() {
       <div  style={{marginTop:'1rem'}}>
   
   <footer
-          className="text-center text-lg-start text-white"
-          style={{backgroundColor:" #929fba"}}
+          className="text-center text-lg-start text-white" 
+          style={{backgroundColor:"dark",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}}
           >
    
-    <div className="container p-4 pb-0">
+    <div className="container p-4 pb-0"  id='myfoot'>
       
       <section className="">
        

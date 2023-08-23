@@ -4,12 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// 
-import {legacy_createStore as  createStore} from 'redux'
+import { store } from './toolkit/store';
 import {Provider} from 'react-redux'
-import rootReducer from './service/reducers/index'//rootReducer k jagah par kuch v likh sakte h, bas aise hi name dene k liye likh diye h.
-const store=createStore(rootReducer)
-// 
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

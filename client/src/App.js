@@ -2,7 +2,6 @@
 import './App.css';
 import Form from './component/Form';
 import BiharTourismHome from './component/BiharTourismHome';
-import Buttons from './component/Buttons';
 import SignUp from './component/SignUp';
 import {BrowserRouter , Routes,Route} from 'react-router-dom'
 import NavBihar from './component/NavBihar';
@@ -11,9 +10,7 @@ import Nalanda from './component/Nalanda';
 import Mahaveer from './component/Mahaveer';
 import Harmandir from './component/Harmandir';
 import MoreDetails from './component/MoreDetails';
-import ladddu from './component/ladddu';
-import HeaderContainer from './containers/HeaderContainer';
-import HomeContainer from './containers/HomeContainer';
+
 import Chatthpuja from './component/Chatthpuja';
 import Rajgir from './component/Rajgir';
 import Gurpa from './component/Gurpa';
@@ -27,9 +24,9 @@ function App() {
   or properties same thodi na hoga , yahi par ek concept ka janam hota hai jise ham props k nam se jante hai. maine navbar component k andar
 props.title likha hai jisse ye hoga ki ham navbar component k title ko change kar payenge alag alag pages me , sab jagah sam title thodi na hoga'
 isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai aur unme apne jarurat k hisab se koi change v kar sakte hai. */}
+<NavBihar/>
 
-<HeaderContainer/>
-<Buttons/>
+
 
 {/*<TextForm/>*/}
 <BrowserRouter basename={process.env.PUBLIC_URL}>
