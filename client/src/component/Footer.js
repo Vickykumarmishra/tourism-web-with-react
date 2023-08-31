@@ -111,7 +111,7 @@ export default function Footer() {
          >
       © 2020 Copyright:
       <a className="text-white" href="https://mdbootstrap.com/"
-         >tourism.bihar.gov.in</a
+         >vickyKumarmishra.gov.in</a
         >
     </div>
    

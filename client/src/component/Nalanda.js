@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Nalanda() {
   return (
     <div>
-      <center><h3 style={{color:"#149914"}}>Ruins Of Nalanda</h3></center>
+      <center><h3 style={{color:"white"}}>Ruins Of Nalanda</h3></center>
 
       <center><img src="nalanda-bihar_755x450.jpg" style={{marginBottom:"2rem",boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914'}} className='img-thumbnail' alt="..."/></center>
       <p id="para9" style={{color:"white",marginLeft:'1rem',marginRight:'1rem'}}>

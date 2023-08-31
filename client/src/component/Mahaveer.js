@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink, Link,Outlet } from 'react-router-dom'
-
 import { motion } from 'framer-motion'
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { useDispatch } from 'react-redux';
 import { increment, decrement } from '../toolkit/cartSlice';
@@ -23,12 +25,12 @@ export default function Mahaveer() {
     <center><p style={{color:'red'}}>Laddu,Price:100,12% discount on total amount</p><center/>
     
     <motion.button   whileHover={{scale:1.1}}  id="buttn" type='submit'className="btn btn-outline-success"
-        onClick={()=>{dispatch(increment())}}>
+        onClick={()=>{dispatch(increment());toast("item added succesfully")}}>
 
         Add To Cart+  </motion.button>
 
         <motion.button  whileHover={{scale:1.1}} style={{marginLeft:'0.5rem'}} id="buttn" type='submit'className="btn btn-success"
-   onClick={()=>{dispatch(decrement())}}>
+   onClick={()=>{dispatch(decrement()) ; toast("1 item removed successfully")}}>
 
         Remove From Cart+  </motion.button>
     </center>
@@ -69,7 +71,8 @@ For this, 60 quintals of Govind Bhog shear rice have been sent to Ayodhya.[10] T
       
       <Outlet />
 
-    
+    <ToastContainer/>
+    {/* https://www.youtube.com/watch?v=k70cqeQGrHQ */}
     </div>
   )
 }

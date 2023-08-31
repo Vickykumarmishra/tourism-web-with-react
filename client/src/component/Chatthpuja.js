@@ -6,7 +6,35 @@ export default function Chatthpuja() {
       
 
       <center>  <h1 style={{color:"white"}}>छठ पर्व</h1></center>
-     <center> <img src="chatth.webp" className='img-thumbnail' alt="..."  style={{marginBottom:"2rem",boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914'}}/></center>
+
+      <div class="container text-center">
+  <div class="row">
+    <div class="col">
+    <center> <img src="chhath6.jpeg" className='img-thumbnail' alt="..."  style={{boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914' ,height:'12rem'}}/></center>
+    </div>
+    <div class="col">
+    <center> <img src="chatth.webp" className='img-thumbnail' alt="..."  style={{boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914',height:'12rem'}}/></center>
+    </div>
+    <div class="col">
+    <center> <img src="chhath4.jpeg" className='img-thumbnail' alt="..."  style={{boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914',height:'12rem'}}/></center>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+    <center> <img src="chhath3.jpeg" className='img-thumbnail' alt="..."  style={{marginBottom:"2rem",marginTop:'1rem',boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914',height:'12rem'}}/></center>
+    </div>
+    <div class="col">
+    <center> <img src="chhath2.jpeg" className='img-thumbnail' alt="..."  style={{marginBottom:"2rem",marginTop:'1rem',boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914',height:'12rem'}}/></center>
+    </div>
+    <div class="col">
+    <center> <img src="chhath8.jpeg" className='img-thumbnail' alt="..."  style={{marginBottom:"2rem",marginTop:'1rem',height:'12rem',boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914',height:'12rem'}}/></center>
+    </div>
+  </div>
+</div>
+    
 
       <p id="para12" style={{color:"white",marginLeft:'1rem',marginRight:'1rem'}}>
       छठ पर्व, छइठ या षष्‍ठी पूजा[5] कार्तिक शुक्ल पक्ष के षष्ठी को मनाया जाने वाला एक हिन्दू पर्व है।[6][7] सूर्योपासना का यह अनुपम लोकपर्व मुख्य रूप से बिहार, झारखण्ड, पश्चिम बंगाल, पूर्वी उत्तर प्रदेश और नेपाल के तराई क्षेत्रों में मनाया जाता है। कहा जाता है यह पर्व मैथिल,मगध और भोजपुरी लोगो का सबसे बड़ा पर्व है ये उनकी संस्कृति है। छठ पर्व बिहार मे बड़े धुम धाम से मनाया जाता है। ये एक मात्र ही बिहार या पूरे भारत का ऐसा पर्व है जो वैदिक काल से चला आ रहा है और ये बिहार कि संस्कृति बन चुका हैं। यहा पर्व बिहार कि वैदिक आर्य संस्कृति कि एक छोटी सी झलक दिखाता हैं। ये पर्व मुख्यः रुप से ॠषियो द्वारा लिखी गई ऋग्वेद मे सूर्य पूजन, उषा पूजन और आर्य परंपरा के अनुसार बिहार मे यहा पर्व मनाया जाता हैं।

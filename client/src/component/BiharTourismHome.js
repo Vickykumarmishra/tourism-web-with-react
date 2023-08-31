@@ -10,7 +10,13 @@ export default function biharTourismHome() {
   return (
     <div>
    
-<div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel" style={{}}>
+
+  <div className='container'>
+    <video controls autoPlay muted style={{width:'55rem',marginTop:'2rem'}}>
+    <source src="bihar_english.mp4" type="video/mp4"/>
+    </video>
+    </div>
+{/* <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel" style={{}}>
     <div className="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -48,7 +54,7 @@ export default function biharTourismHome() {
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> */}
 
   {/*firstly i have taken grids, inside i have putted cards */}
   <div className="container text-center">

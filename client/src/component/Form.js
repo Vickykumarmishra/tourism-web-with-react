@@ -3,14 +3,16 @@ import React from "react";
 import { useState } from "react";
 import {  Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion"
-
+import Swal from "sweetalert2";
 import { useNavigate } from 'react-router-dom';
-
+import useSound from "use-sound";
 
 export default function Form(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAdd] = useState("");
+
+  const [play]=useSound("error.mp3");
   const navigate = useNavigate();
   
   function handleName() {
@@ -29,7 +31,14 @@ export default function Form(){
 
   const url="https://panicky-fawn-trunks.cyclic.app/posst"
     if(name==''||email==''||address==''){
-      alert('Please fill all the details before submission!')
+
+      play();
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'some details are missing!',
+        footer: '<a href="">Why do I have this issue?</a>'
+      })
     }
     else if(name!=''||email!=''||address!=''){
       fetch(url, {
@@ -48,7 +57,13 @@ export default function Form(){
         .catch((error) => {
           console.error("Error updating data:", error);
         });
-        alert('data saved to database successfully')   
+       
+        Swal.fire(
+          'saved',
+          'Your information saved to database!',
+          'success'
+        )
+
         navigate('/BiharTourismHome'); 
     }
   
@@ -58,7 +73,7 @@ export default function Form(){
 }
    return (
     
-   <center><motion.div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
+   <center><motion.div className="container shadow p-3 mb-5 bg-body-tertiary rounded" npm r >
     
         
     <motion.div
@@ -70,7 +85,7 @@ export default function Form(){
         borderRadius:"0.5rem",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'
       }}   whileHover={{scale:1.1}}
     >
-      <h1 style={{ marginBottom: "2rem" ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
+      <h1 style={{ marginBottom: "2rem",marginTop:'1rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
         <b>Enter Details</b>
       </h1>
       <form onSubmit={handleSubmit} style={{color:'white'}}>
