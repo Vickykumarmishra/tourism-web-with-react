@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { Auth0Provider } from '@auth0/auth0-react';
+
+
 import { store } from './toolkit/store';
 import {Provider} from 'react-redux'
 
@@ -11,10 +14,19 @@ import {Provider} from 'react-redux'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- 
+   
+  <Auth0Provider
+    domain="dev-s1lln40lmbm6it54.us.auth0.com"
+    clientId="sTAYqbkDYRAyyFjaB578YKqIBEBBoKZX"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
     <Provider store={store}>  {/**this is called wrapping */}
     <App />
-  </Provider>,
+  </Provider>
+  </Auth0Provider>
+
  
 );
 

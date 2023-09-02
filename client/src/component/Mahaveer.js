@@ -25,14 +25,14 @@ export default function Mahaveer() {
     <center><p style={{color:'red'}}>Laddu,Price:100,12% discount on total amount</p><center/>
     
     <motion.button   whileHover={{scale:1.1}}  id="buttn" type='submit'className="btn btn-outline-success"
-        onClick={()=>{dispatch(increment());toast("item added succesfully")}}>
+        onClick={()=>{dispatch(increment());toast("item added succesfully",{toastId:'success6'})}}>
 
         Add To Cart+  </motion.button>
 
         <motion.button  whileHover={{scale:1.1}} style={{marginLeft:'0.5rem'}} id="buttn" type='submit'className="btn btn-success"
-   onClick={()=>{dispatch(decrement()) ; toast("1 item removed successfully")}}>
+   onClick={()=>{dispatch(decrement()) ; toast("1 item removed successfully",{toastId:'success9'})}}>
 
-        Remove From Cart+  </motion.button>
+        Remove From Cart-  </motion.button>
     </center>
     </div>
     

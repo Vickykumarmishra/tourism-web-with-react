@@ -6,11 +6,11 @@ import { motion } from "framer-motion"
 import Swal from "sweetalert2";
 import { useNavigate } from 'react-router-dom';
 import useSound from "use-sound";
-
+import {VscFeedback} from 'react-icons/vsc'
 export default function Form(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [address, setAdd] = useState("");
+  const [comment, setAdd] = useState("");
 
   const [play]=useSound("error.mp3");
   const navigate = useNavigate();
@@ -19,10 +19,10 @@ export default function Form(){
 
     let named = document.getElementById("name").value;
     let emailed = document.getElementById("email").value;
-    let addressed = document.getElementById("address").value;
+    let commented = document.getElementById("comment").value;
     setName(named);
     setEmail(emailed);
-    setAdd(addressed);
+    setAdd(commented);
 
   }
 
@@ -30,7 +30,7 @@ export default function Form(){
     event.preventDefault(); // Prevent the default form submission behavior
 
   const url="https://panicky-fawn-trunks.cyclic.app/posst"
-    if(name==''||email==''||address==''){
+    if(name==''||email==''||comment==''){
 
       play();
       Swal.fire({
@@ -40,7 +40,7 @@ export default function Form(){
         footer: '<a href="">Why do I have this issue?</a>'
       })
     }
-    else if(name!=''||email!=''||address!=''){
+    else if(name!=''||email!=''||comment!=''){
       fetch(url, {
         method: "POST",
         //mode: "no-cors",
@@ -48,7 +48,7 @@ export default function Form(){
           "Content-Type": "application/json",
           
         },
-        body: JSON.stringify({ name, email, address }),
+        body: JSON.stringify({ name, email, comment }),
         
       })
         .then(() => {
@@ -64,7 +64,7 @@ export default function Form(){
           'success'
         )
 
-        navigate('/BiharTourismHome'); 
+        // navigate('/BiharTourismHome'); 
     }
   
   
@@ -73,7 +73,7 @@ export default function Form(){
 }
    return (
     
-   <center><motion.div className="container shadow p-3 mb-5 bg-body-tertiary rounded" npm r >
+   <center><motion.div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
     
         
     <motion.div
@@ -86,7 +86,7 @@ export default function Form(){
       }}   whileHover={{scale:1.1}}
     >
       <h1 style={{ marginBottom: "2rem",marginTop:'1rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
-        <b>Enter Details</b>
+      <VscFeedback/> <b>Feedback</b>
       </h1>
       <form onSubmit={handleSubmit} style={{color:'white'}}>
         Name :
@@ -106,17 +106,17 @@ export default function Form(){
         />
         <br />
         <br />
-        Address:
-        <motion.input
+       write down your Comment below:
+        <motion.textarea
          
-          name="address"
-          id="address"
+          name="comment"
+          id="comment"
           onChange={handleName}
-          style={{ width: "11rem" ,borderRadius:'0.5rem'}} whileHover={{scale:1.1}}
+          style={{ width: "14rem" ,borderRadius:'0.5rem',marginLeft:"2.4rem"}} whileHover={{scale:1.1}}
         />
         <br />
         <br />
-    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} >Submit{" "}</motion.button>
+    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} ><b>Submit{" "}</b></motion.button>
       </form>
     </motion.div>
        

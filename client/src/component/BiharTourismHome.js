@@ -1,60 +1,41 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { motion } from 'framer-motion';
+import Form from './Form';
+import Swal from 'sweetalert2';
 //import Nalanda from './Nalanda'
-const b=1;
-export default function biharTourismHome() {
+const b=1;let count=0;
+export default function BiharTourismHome() {
+  
+//const [pageLoaded, setPageLoaded] = useState(false);
+/*useEffect(() => {
+  // Use the useEffect hook to set the state when the component mounts (i.e., after the page loads)
+  setPageLoaded(true);
+}, []);*/
+
+useEffect(()=>{
+   if(count==0){   
+  Swal.fire(
+    'you logged in',
+    'Bihar tourism welcomes you',
+    'success'
+  )}; count++;
+    },[]);
+  return (
+
+    
+    <div >
+   
+   {/* {pageLoaded && <Form />} */}
+  <div className='container' >
 
   
-  return (
-    <div>
-   
-
-  <div className='container'>
-    <video controls autoPlay muted style={{width:'55rem',marginTop:'2rem'}}>
+    <video controls autoPlay muted style={{width:'100%',marginTop:'2rem'}}>
     <source src="bihar_english.mp4" type="video/mp4"/>
     </video>
     </div>
-{/* <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel" style={{}}>
-    <div className="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div className="carousel-inner">
-      <div className="carousel-item active" data-bs-interval="1000">
-        <img src="golghar.jpeg" id="photu" className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <h3  style={{color:"white "}} className="responsive-font-example">Golghar,Patna</h3>
-          <p  style={{color:"white "}}className="responsive-font-example">Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div className="carousel-item active" data-bs-interval="1000">
-        <img src="jal mandir pawapuri Bihar.jpeg"  id="photu" className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
 
-          <h3 style={{color:"white "}} className="responsive-font-example" >Jal Mandir ,Pawapuri</h3>
-          <p  style={{color:"white " }} className="responsive-font-example">Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div className="carousel-item active" data-bs-interval="1000">        
-        <img src="maahabodhi.jpg" id="photu" className="d-block w-100" alt="..."/>
-        <div className="carousel-caption d-none d-md-block">
-          <h3 style={{color:"white "}}className="responsive-font-example">Mahabodhi Temple , Gaya</h3>
-          <p  style={{color:"white "}} className="responsive-font-example">Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Previous</span>
-    </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Next</span>
-    </button>
-  </div> */}
 
   {/*firstly i have taken grids, inside i have putted cards */}
   <div className="container text-center">

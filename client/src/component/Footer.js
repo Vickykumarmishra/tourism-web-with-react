@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div>
       
-      <div  style={{marginTop:'1rem'}}>
+      <div>
   
   <footer
           className="text-center text-lg-start text-white" 
