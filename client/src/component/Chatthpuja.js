@@ -10,13 +10,13 @@ export default function Chatthpuja() {
       <div class="container text-center">
   <div class="row">
     <div class="col">
-    <center> <img src="chhath6.jpeg" className='img-thumbnail' alt="..."  style={{boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914' ,height:'12rem'}}/></center>
+    <center> <img src="chhath6.jpeg" className='img-thumbnail' alt="..."  style={{ height:'12rem'}}/></center>
     </div>
     <div class="col">
-    <center> <img src="chatth.webp" className='img-thumbnail' alt="..."  style={{boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914',height:'12rem'}}/></center>
+    <center> <img src="chatth.webp" className='img-thumbnail' alt="..."  style={{height:'12rem'}}/></center>
     </div>
     <div class="col">
-    <center> <img src="chhath4.jpeg" className='img-thumbnail' alt="..."  style={{boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914',height:'12rem'}}/></center>
+    <center> <img src="chhath4.jpeg" className='img-thumbnail' alt="..."  style={{height:'12rem'}}/></center>
     </div>
   </div>
 </div>
