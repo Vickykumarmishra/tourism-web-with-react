@@ -20,7 +20,7 @@ export default function Mahaveer() {
 
   <div class="col" style={{marginBottom:"2rem"}}>
     <center>  <motion.h3   style={{color:"white"}}><b>Order prasad at your home</b></motion.h3></center>
-    <center> <img src="laddu.jpg" className='img-thumbnail' style={{boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914'}} alt="..." /></center>
+    <center> <img src="laddu.jpg" className='img-fluid' style={{}} alt="..." /></center>
   
     <center><p style={{color:'red'}}>Laddu,Price:100,12% discount on total amount</p><center/>
     

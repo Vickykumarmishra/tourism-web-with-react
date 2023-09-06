@@ -113,10 +113,10 @@ useEffect(()=>{
       
       {/*card5 */}
       <motion.div whileHover={{scale:1.1}} className="card" id="card5" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
-  <img src="rajgir_755x450.jpg" className="img-thumbnail" alt="..."/>
+  <img src="raj.jpg" className="img-thumbnail" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'white'}}>Rajgir</h5>
-    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's.</p>
     <NavLink to="/Rajgir"  className="btn btn-outline-light" id="btn5">Know In Details</NavLink>
     
   </div>

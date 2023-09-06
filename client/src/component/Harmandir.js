@@ -4,7 +4,7 @@ export default function Harmandir() {
   return (
 <div>
     <center>  <h1 style={{color:"white"}}>HarMandir</h1></center>
-     <center> <img src="Harmandir_Patna_755x450.jpg" className='img-thumbnail' alt="..."  style={{marginBottom:"2rem",boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914'}}/></center>
+     <center> <img src="Harmandir_Patna_755x450.jpg" className='img-fluid' alt="..."  style={{marginBottom:"2rem",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}}/></center>
 
     <div>
      

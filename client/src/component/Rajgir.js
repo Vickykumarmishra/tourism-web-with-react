@@ -4,7 +4,7 @@ export default function Rajgir() {
   return (
     <div>
           <center>  <h1 style={{color:"white"}}>Incredible Rajgir</h1></center>
-     <center> <img src="rajgir_755x450.jpg" className='img-thumbnail' alt="..."  style={{marginBottom:"2rem",boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914'}}/></center>
+     <center> <img src="raj.jpg" className='img-fluid' alt="..."  style={{marginBottom:"2rem",boxShadow:'1px 1px 2px white, 0 0 25px #149914, 0 0 5px #149914'}}/></center>
 
       <p id="para9" style={{color:"white",marginLeft:'1rem',marginRight:'1rem'}}>
       Rajgir, meaning "The City of Kings," is a historic town in the district of Nalanda in Bihar, India. As the ancient seat and capital of the Haryanka dynasty, the Pradyota dynasty, the Brihadratha dynasty and the Mauryan Empire, as well as the dwelling ground of such historical figures as The Buddha and The Mahavira, the city holds a place of prominence in Hindu, Buddhist and Jain scriptures. As of 2011, the population of the town was reported to be 71,459 while the population in the community development block was about 88,500.
