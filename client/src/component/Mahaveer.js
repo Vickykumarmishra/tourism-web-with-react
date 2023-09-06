@@ -30,7 +30,7 @@ export default function Mahaveer() {
         Add Item+  </motion.button>
 
         <motion.button  whileHover={{scale:1.1}} style={{marginLeft:'0.5rem'}} id="buttn" type='submit'className="btn btn-info"
-   onClick={()=>{dispatch(decrement()) ; toast("1 item removed successfully",{toastId:'success9'})}}>
+   onClick={()=>{dispatch(decrement()) ;if(data>0){ toast("1 item removed successfully",{toastId:'success9'})}}}>
 
         Delete Item  </motion.button>
     </center>
