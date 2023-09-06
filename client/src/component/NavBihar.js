@@ -10,9 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Form from './Form';
 import BiharTourismHome from './BiharTourismHome';
 
-// function fire(){
-//   toast("logged out",{toastId:'success'})
-// }
+
 export default function NavBihar() {
 
  const info=useSelector((state)=>state.cartbox.cart)
@@ -40,11 +38,16 @@ export default function NavBihar() {
     
     
     <div style={{float:'left'}}>
-        {isAuthenticated && <p style={{color:'white',marginRight:'1rem',float:'right'}}>User:{user.name}</p>}</div>
+
+    
+        {isAuthenticated && <p style={{color:'white',marginRight:'1rem',float:'right'}}><img style={{borderRadius:'50%',height:'4rem'}} src={user.picture} alt={user.name} />User:{user.name} </p>}
+        
+        
+        </div>
          
         {/* {isAuthenticated && toast("loggedIn",{ toastId: 'success11'})} */}
         {/* {isAuthenticated && toast("loggedInn",{ toastId: 'success11'})} */}
-     <div style={{float:'left',marginRight:'1rem'}}>  <center>{isAuthenticated?<li><button style={{}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }><center> <b>Log Out</b></center></button></li>: <li><button  className="btn btn-light" style={{}} onClick={() =>loginWithRedirect() }><center><b>Log In</b></center></button></li>}</center></div>
+     <div style={{float:'left',marginRight:'1rem'}}> {isAuthenticated?<button style={{}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }> <b>Log Out</b></button>: <button  className="btn btn-light" style={{}} onClick={() =>loginWithRedirect() }><b>Log In</b></button>}</div>
              {/* {!isAuthenticated && fire()} */}
 
        <div  style={{float:'left'}}>
@@ -52,7 +55,7 @@ export default function NavBihar() {
         <form className="d-flex" role="search" id='cart' >
          
            <img id="ecomm" src="cart.jpg" alt='...' style={{height:'4rem' ,Color:"green"}} />
-           <span className="cart-count" style={{backgroundColor:"black",color:"white",height:'3rem'}}><b>{info}</b></span>
+           <span className="cart-count" style={{backgroundColor:"black",color:"white",height:'4rem'}}><b>{info}</b></span>
           </form>
           </div>
         {/* <form className="d-flex" role="search">

@@ -106,7 +106,7 @@ export default function Form(){
         />
         <br />
         <br />
-       write down your Comment below:
+      <p style={{marginLeft:"1.5rem"}}>write down your Comment below:</p> 
         <motion.textarea
          
           name="comment"
