@@ -19,7 +19,7 @@ const { loginWithRedirect } = useAuth0();
   }
 
   return (
-    <div style={{}} >
+    <div style={{marginTop:"1rem"}} >
 
     <center><div className="container"  style={{margin:'0rem'}} >
   <div className="row">
