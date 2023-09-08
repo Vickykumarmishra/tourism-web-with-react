@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Form from './Form';
 import BiharTourismHome from './BiharTourismHome';
-
+import { motion } from 'framer-motion';
 
 export default function NavBihar() {
 
@@ -47,7 +47,7 @@ export default function NavBihar() {
          
         {/* {isAuthenticated && toast("loggedIn",{ toastId: 'success11'})} */}
         {/* {isAuthenticated && toast("loggedInn",{ toastId: 'success11'})} */}
-     <div style={{float:'left',marginRight:'1rem'}}> {isAuthenticated?<button style={{}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }> <b>Log Out</b></button>: <button  className="btn btn-light" style={{}} onClick={() =>loginWithRedirect() }><b>Log In</b></button>}</div>
+     <div style={{float:'left',marginRight:'1rem'}}> {isAuthenticated?<motion.button style={{}} whileHover={{scale:1.1}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }> <b>Log Out</b></motion.button>: <motion.button  whileHover={{scale:1.1}}  className="btn btn-light" style={{}} onClick={() =>loginWithRedirect() }><b>Log In</b></motion.button>}</div>
              {/* {!isAuthenticated && fire()} */}
 
        <div  style={{float:'left'}}>
