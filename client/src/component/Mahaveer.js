@@ -18,8 +18,8 @@ export default function Mahaveer() {
 <div class="container">
   <div class="row">
 
-  <div class="col" style={{marginBottom:"2rem"}}>
-    <center>  <motion.h3   style={{color:"white"}}><b>Order prasad at your home</b></motion.h3></center>
+  <div class="col" style={{marginBottom:"2rem",marginTop:'2.5rem'}}>
+    {/* <center>  <motion.h3   style={{color:"white"}}><b>Order prasad at your home</b></motion.h3></center> */}
     <center> <img src="laddu.jpg" className='img-fluid' style={{}} alt="..." /></center>
   
     <center><p style={{color:'red'}}>Laddu,Price:100,12% discount on total amount</p><center/>
@@ -27,12 +27,12 @@ export default function Mahaveer() {
     <motion.button   whileHover={{scale:1.1}} style={{marginTop:'0.5rem'}}  type='submit' className="btn btn-info"
         onClick={()=>{dispatch(increment());toast("item added succesfully",{toastId:'success6'})}}>
 
-        Add Item+  </motion.button>
+        <b>Add Item+ </b> </motion.button>
 
         <motion.button  whileHover={{scale:1.1}} style={{marginLeft:'0.5rem',marginTop:'0.5rem'}} id="buttn" type='submit'className="btn btn-info"
    onClick={()=>{dispatch(decrement()) ;if(data>0){ toast("1 item removed successfully",{toastId:'success9'})}}}>
 
-        Delete Item  </motion.button>
+        <b>Delete Item</b>  </motion.button>
     </center>
     </div>
     
