@@ -3,7 +3,7 @@ import { BrowserRouter,Link } from 'react-router-dom'
 
 export default function Gurpa() {
   return (
-    <div>
+    <div className='container'>
       <center>  <h1 style={{color:"white"}}><b>Gurpa Hills</b></h1></center>
      <center> <img src="gurpa_755x450.jpeg" className='img-fluid' alt="..."  style={{marginBottom:"2rem"}}/></center>
 
@@ -14,7 +14,7 @@ It is also considered to be one of the tallest peaks in the Gangetic plains. The
       </p>
 
 
-      <center><Link to="/BiharTourismHome"  class="btn btn-danger">Go-To-Home</Link></center>
+      <center><Link whileHover={{scale:1.1}} to="/BiharTourismHome"  ><button className='btn btn-info'><b>Home</b></button></Link></center>
       
 
       

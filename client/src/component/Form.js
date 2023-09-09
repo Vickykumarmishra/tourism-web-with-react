@@ -92,14 +92,18 @@ export default function Form(){
       <h1 style={{marginTop:'0.5rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
       <VscFeedback/> <b>Feedback</b>
       </h1>
+
+      
       <Player
   autoplay
   loop
   src="https://lottie.host/0c8df0c1-439f-4bbf-a6d0-3c0fd9889323/UkUFs0ozXX.json"
-  style={{ height: '8rem', width: '10rem' ,marginTop:"0rem"}}
+  style={{ height: '8rem', width: '10rem' ,marginTop:"0rem",padding:'0rem'}}
 >
   {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}
 </Player>
+
+
       <form onSubmit={handleSubmit} style={{color:'white'}}>
         Name :
         <motion.input

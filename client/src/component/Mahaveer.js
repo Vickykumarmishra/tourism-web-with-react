@@ -15,10 +15,10 @@ export default function Mahaveer() {
   return (
     <div>
 
-<div class="container">
-  <div class="row">
+<div className="container">
+  <div className="row">
 
-  <div class="col" style={{marginBottom:"2rem",marginTop:'2.5rem'}}>
+  <div className="col" style={{marginBottom:"2rem",marginTop:'2.5rem'}}>
     {/* <center>  <motion.h3   style={{color:"white"}}><b>Order prasad at your home</b></motion.h3></center> */}
     <center> <img src="laddu.jpg" className='img-fluid' style={{}} alt="..." /></center>
   
@@ -43,7 +43,7 @@ export default function Mahaveer() {
   Today's Rate:₹100/kg<br/><br/>
   <p>Total amount to be paid: {data*100}</p>
 
-  <NavLink to='https://buy.stripe.com/test_5kAdSbgBb4NjdwcdQQ'><motion.button whileHover={{scale:1.1}} className='btn btn-info'>purchase ₹</motion.button></NavLink>
+  <NavLink to='https://buy.stripe.com/test_5kAdSbgBb4NjdwcdQQ'><motion.button whileHover={{scale:1.1}} className='btn btn-info'><b>purchase ₹</b></motion.button></NavLink>
    </center>
 
     </div>
@@ -67,7 +67,7 @@ For this, 60 quintals of Govind Bhog shear rice have been sent to Ayodhya.[10] T
 
       
       <NavLink to='MoreDetails' className='className="btn btn-primary"' style={{marginLeft:'1rem',marginRight:'1rem',color:'white'}}>MoreDetails</NavLink>
-      <center><Link to="/BiharTourismHome"  class="btn btn-danger">Go-To-Home</Link></center>
+      <center><Link whileHover={{scale:1.1}} to="/BiharTourismHome"  ><button className='btn btn-info'><b>Home</b></button></Link></center>
       
       <Outlet />
 

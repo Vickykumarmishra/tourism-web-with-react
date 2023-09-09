@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink,Link, Outlet } from 'react-router-dom'
 import { useState ,useEffect} from 'react';
 import { motion } from 'framer-motion';
 import Form from './Form';
@@ -139,6 +139,10 @@ useEffect(()=>{
     </div>
   </div>
 </div>   
+
+
+<Link to='/Form'><div className="container" style={{backgroundColor:'lightgreen'}}><center><b>Give Feedback</b></center></div></Link>
     </div>
+    
   )
 }
