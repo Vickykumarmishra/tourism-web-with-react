@@ -7,6 +7,10 @@ import Swal from "sweetalert2";
 import { useNavigate } from 'react-router-dom';
 import useSound from "use-sound";
 import {VscFeedback} from 'react-icons/vsc'
+
+//import Lottie from 'lottie-web';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+
 export default function Form(){
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -85,9 +89,17 @@ export default function Form(){
         borderRadius:"0.5rem",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'
       }}   whileHover={{scale:1.1}}
     >
-      <h1 style={{ marginBottom: "2rem",marginTop:'1rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
+      <h1 style={{marginTop:'0.5rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
       <VscFeedback/> <b>Feedback</b>
       </h1>
+      <Player
+  autoplay
+  loop
+  src="https://lottie.host/0c8df0c1-439f-4bbf-a6d0-3c0fd9889323/UkUFs0ozXX.json"
+  style={{ height: '8rem', width: '10rem' ,marginTop:"0rem"}}
+>
+  {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}
+</Player>
       <form onSubmit={handleSubmit} style={{color:'white'}}>
         Name :
         <motion.input
@@ -116,12 +128,16 @@ export default function Form(){
         />
         <br />
         <br />
-    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} ><b>Submit{" "}</b></motion.button>
+    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} ><b>Submit{" "}</b> </motion.button>
       </form>
     </motion.div>
        
+<div>
+
+</div>
        
-       </motion.div></center>  
+       </motion.div></center> 
+
    )
         }
 

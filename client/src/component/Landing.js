@@ -7,6 +7,10 @@ import biharTourismHome from './BiharTourismHome';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { motion } from 'framer-motion';
+
+import Lottie from 'lottie-web';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+
 export default function Landing() {
 
 const { loginWithRedirect } = useAuth0();
@@ -48,6 +52,9 @@ const { loginWithRedirect } = useAuth0();
   </div>
   <Link to='/Form'><div style={{backgroundColor:'lightgreen'}}><b>Give Feedback</b></div></Link>
 </div></center> 
+
+
+
     </div>
   )
 }
