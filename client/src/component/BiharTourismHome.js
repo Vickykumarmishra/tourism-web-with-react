@@ -43,7 +43,7 @@ useEffect(()=>{
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card1 */}
-      <motion.div  whileHover={{scale:1.1}} className="card" id="card1" style={{width:"18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
+      <div  whileHover={{scale:1.1}} data-aos="fade-up" data-aos-duration="1500" className="card" id="card1" style={{width:"18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="nalanda_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'white'}}>Nalanda University</h5>
@@ -53,14 +53,14 @@ useEffect(()=>{
     <NavLink to="/Nalanda" className="btn btn-outline-light" id="btn4">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
-</motion.div>
+</div>
 
   </div>
 
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card2 */}
-      <motion.div  whileHover={{scale:1.1}} className="card" id="card2" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
+      <div  whileHover={{scale:1.1}} data-aos="fade-up" data-aos-duration="1500" className="card" id="card2" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="mahavir_mandir_755x450.jpeg" className="img-fluid" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'white'}}>Mahaveer Mandir</h5>
@@ -68,13 +68,13 @@ useEffect(()=>{
     <NavLink to="/Mahaveer"  className="btn btn-outline-light" id="btn3">Know In Details</NavLink>
     
   </div>
-</motion.div>
+</div>
 </div>
 
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card3 */}
-      <motion.div whileHover={{scale:1.1}} className="card" id="card3" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
+      <div whileHover={{scale:1.1}} data-aos="fade-up" data-aos-duration="1500" className="card" id="card3" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="Harmandir_Patna_755x450.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'white'}}  animate={{x:'50px'}}>Harmandir sahib</h5>
@@ -82,7 +82,7 @@ useEffect(()=>{
     <NavLink to="/Harmandir" className="btn btn-outline-light" id="btn2">Know In Details</NavLink>
     <Outlet/>
   </div>
-</motion.div>
+</div>
 
     </div>
   </div>
@@ -95,7 +95,7 @@ useEffect(()=>{
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card4 */}
-      <motion.div whileHover={{scale:1.1}} className="card" id="card4" style={{width:"18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
+      <div whileHover={{scale:1.1}} data-aos="fade-up" data-aos-duration="1500" className="card" id="card4" style={{width:"18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="chatth.webp" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'white'}}>Chatth Puja</h5>
@@ -105,14 +105,14 @@ useEffect(()=>{
     <NavLink to="/chatthpuja" className="btn btn-outline-light" id="btn1">Know In Details</NavLink>{/*while doing nested routing, 'to' me '/' dene par kam nahi kar raha hai app */}
        
   </div>
-</motion.div>
+</div>
 
   </div>
 
     <div className="col" style={{marginRight:"1rem"}}>
       
       {/*card5 */}
-      <motion.div whileHover={{scale:1.1}} className="card" id="card5" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
+      <div whileHover={{scale:1.1}} data-aos="fade-up" data-aos-duration="1500" className="card" id="card5" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="raj.jpg" className="img-fluid" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'white'}}>Rajgir</h5>
@@ -120,13 +120,13 @@ useEffect(()=>{
     <NavLink to="/Rajgir"  className="btn btn-outline-light" id="btn5">Know In Details</NavLink>
     
   </div>
-</motion.div>
+</div>
 </div>
 
 
     <div className="col" style={{ marginRight:"1rem"}}>
       {/*card6 */}
-      <motion.div whileHover={{scale:1.1}} className="card" id="card6" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
+      <div whileHover={{scale:1.1}} data-aos="fade-up" data-aos-duration="1500" className="card" id="card6" style={{width: "18rem;",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}>
   <img src="gurpa_755x450.jpeg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title" style={{color:'white'}} >Gurpa Hills</h5>
@@ -134,14 +134,14 @@ useEffect(()=>{
     <NavLink to="/Gurpa" className="btn btn-outline-light" id="btn6">Know In Details</NavLink>
     <Outlet/>
   </div>
-</motion.div>
+</div>
 
     </div>
   </div>
 </div>   
 
 
-<Link to='/Form'><div className="container" style={{backgroundColor:'lightgreen'}}><center><b>Give Feedback</b></center></div></Link>
+<Link to='/Form'><div className="container"  style={{backgroundColor:'lightgreen'}}><center><b>Give Feedback</b></center></div></Link>
     </div>
     
   )

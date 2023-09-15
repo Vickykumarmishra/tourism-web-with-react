@@ -39,6 +39,8 @@ const { loginWithRedirect } = useAuth0();
 
   
 
+
+
     <div className="col" style={{backgroundColor:'white',margin:'0rem'}}>
         <center><img className="img-thumbnail" src="landingimage.jpeg" style={{height:'20rem',border:'1rem solid white'}}></img></center>
     <b> <h4 style={{color:"black",padding:'2rem',fontFamily:"Times New Roman"}}>Explore the enchanting wonders of Bihar, a land brimming with cultural richness and historical treasures. Bihar Tourism invites you to embark on a captivating journey through its ancient heritage, spiritual destinations, and natural beauty.</h4></b>
@@ -62,7 +64,7 @@ const { loginWithRedirect } = useAuth0();
     </div>
 
   </div>
-  <Link to='/Form'><div style={{backgroundColor:'lightgreen'}}><b>Give Feedback</b></div></Link>
+  {/* <Link to='/Form'><div style={{backgroundColor:'lightgreen'}}><b>Give Feedback</b></div></Link> */}
 </div></center> 
 
 

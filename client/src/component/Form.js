@@ -77,9 +77,10 @@ export default function Form(){
 }
    return (
     
+    <>
    <center><motion.div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
     
-        
+    
     <motion.div
       className="container"
       style={{
@@ -139,8 +140,12 @@ export default function Form(){
 <div>
 
 </div>
-       
+
+     
        </motion.div></center> 
+
+       <NavLink to="/BiharTourismHome"><div style={{backgroundColor:'lightgreen'}}><center><b>Go Home</b></center></div></NavLink>
+       </>
 
    )
         }
