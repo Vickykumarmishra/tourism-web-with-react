@@ -40,7 +40,7 @@ export default function NavBihar() {
     <div style={{float:'left'}}>
 
     
-        {isAuthenticated && <p style={{color:'white',marginRight:'1rem',float:'right'}}><img style={{borderRadius:'50%',height:'3rem'}} src={user.picture} alt={user.name} />User:{user.name} </p>}
+        {isAuthenticated && <p style={{color:'white',marginRight:'1rem',float:'right'}}><img style={{borderRadius:'50%',height:'2rem'}} src={user.picture} alt={user.name} />User:{user.name} </p>}
         
         
         </div>
