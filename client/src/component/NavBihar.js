@@ -40,14 +40,14 @@ export default function NavBihar() {
     <div style={{float:'left'}}>
 
     
-        {isAuthenticated && <p style={{color:'white',marginRight:'1rem',float:'right'}}><img style={{borderRadius:'50%',height:'2rem'}} src={user.picture} alt={user.name} />User:{user.name} </p>}
+        {isAuthenticated && <p style={{color:'white',marginRight:'1rem',float:'right'}}><img style={{borderRadius:'50%',height:'2rem',marginTop:"0.6rem"}} src={user.picture} alt={user.name} />User:{user.name} </p>}
         
         
         </div>
          
         {/* {isAuthenticated && toast("loggedIn",{ toastId: 'success11'})} */}
         {/* {isAuthenticated && toast("loggedInn",{ toastId: 'success11'})} */}
-     <div style={{float:'left',marginRight:'1rem'}}> {isAuthenticated?<motion.button style={{marginTop:'0.5rem'}} whileHover={{scale:1.1}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }> <b>Log Out</b></motion.button>: <motion.button  whileHover={{scale:1.1}}  className="btn btn-light" style={{marginTop:'0.5rem'}} onClick={() =>loginWithRedirect() }><b>Log In</b></motion.button>}</div>
+     <div style={{float:'left',marginRight:'1rem'}}> {isAuthenticated?<motion.button style={{marginTop:'0.6rem'}} whileHover={{scale:1.1}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }> <b>Log Out</b></motion.button>: <motion.button  whileHover={{scale:1.1}}  className="btn btn-light" style={{marginTop:'0.6rem'}} onClick={() =>loginWithRedirect() }><b>Log In</b></motion.button>}</div>
              {/* {!isAuthenticated && fire()} */}
 
        <div  style={{float:'left'}}>
@@ -55,7 +55,7 @@ export default function NavBihar() {
         <form className="d-flex" role="search" id='cart' >
          
            <img id="ecomm" src="cart.jpg" alt='...' style={{height:'4rem' ,Color:"green"}} />
-           <span className="cart-count" style={{backgroundColor:"black",color:"white",height:'4rem'}}><b>{info}</b></span>
+           <span className="cart-count" style={{backgroundColor:"black",color:"white",height:'3.8rem',marginTop:"0.2rem"}}><b>{info}</b></span>
           </form>
           </div>
         {/* <form className="d-flex" role="search">
