@@ -42,7 +42,7 @@ const { loginWithRedirect } = useAuth0();
 
 
     <div className="col" style={{backgroundColor:'white', fontSize:'2rem'}}>
-        <center><img className="img-thumbnail" src="landingimage.jpeg" style={{height:'20rem',border:'1rem solid white'}}></img></center>
+        <center><img className="img-thumbnail" src="landingimage.jpeg" style={{height:'19rem',border:'1rem solid white'}}></img></center>
 
         <b><Typewriter
       options={{
