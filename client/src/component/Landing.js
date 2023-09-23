@@ -7,7 +7,7 @@ import biharTourismHome from './BiharTourismHome';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { motion } from 'framer-motion';
-
+import Typewriter from 'typewriter-effect'; 
 
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
@@ -41,8 +41,18 @@ const { loginWithRedirect } = useAuth0();
 
 
 
-    <div className="col" style={{backgroundColor:'white',margin:'0rem'}}>
+    <div className="col" style={{backgroundColor:'white', fontSize:'2rem'}}>
         <center><img className="img-thumbnail" src="landingimage.jpeg" style={{height:'20rem',border:'1rem solid white'}}></img></center>
+
+        <b><Typewriter
+      options={{
+        strings: ['Bihar Tourism Welcomes You', 'बिहार में राउर स्वागत बा'],
+        autoStart: true,
+        loop: true,
+      }}
+    
+    /></b>
+
     <b> <h4 style={{color:"black",padding:'2rem',fontFamily:"Times New Roman"}}>Explore the enchanting wonders of Bihar, a land brimming with cultural richness and historical treasures. Bihar Tourism invites you to embark on a captivating journey through its ancient heritage, spiritual destinations, and natural beauty.</h4></b>
     </div>
 
