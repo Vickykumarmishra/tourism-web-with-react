@@ -47,7 +47,7 @@ export default function NavBihar() {
          
         {/* {isAuthenticated && toast("loggedIn",{ toastId: 'success11'})} */}
         {/* {isAuthenticated && toast("loggedInn",{ toastId: 'success11'})} */}
-     <div style={{float:'left',marginRight:'1rem'}}> {isAuthenticated?<motion.button style={{}} whileHover={{scale:1.1}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }> <b>Log Out</b></motion.button>: <motion.button  whileHover={{scale:1.1}}  className="btn btn-light" style={{}} onClick={() =>loginWithRedirect() }><b>Log In</b></motion.button>}</div>
+     <div style={{float:'left',marginRight:'1rem'}}> {isAuthenticated?<motion.button style={{marginTop:'0.5rem'}} whileHover={{scale:1.1}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }> <b>Log Out</b></motion.button>: <motion.button  whileHover={{scale:1.1}}  className="btn btn-light" style={{marginTop:'0.5rem'}} onClick={() =>loginWithRedirect() }><b>Log In</b></motion.button>}</div>
              {/* {!isAuthenticated && fire()} */}
 
        <div  style={{float:'left'}}>
