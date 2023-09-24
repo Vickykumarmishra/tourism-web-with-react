@@ -36,7 +36,10 @@ export default function Form(){
     action.resetForm();
     }
     })
-
+function handleSubmission(){
+  handleSubmiit();
+  handleSubmit();
+}
   function handleName() {
 
     let named = document.getElementById("name").value;
@@ -123,7 +126,7 @@ export default function Form(){
 </Player>
 
 
-      <form  onSubmit={handleSubmit} style={{color:'white'}}>
+      <form  onSubmit={handleSubmission} style={{color:'white'}}>
         Name :
         <motion.input
           name="name"
@@ -162,7 +165,7 @@ export default function Form(){
         <br />
         {errors.comment && touched.comment?(<p  style={{color:'red'}}className='form-error'>{errors.comment}</p>):null}
         
-    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} onSubmit={handleSubmiit}><b>Submit{" "}</b> </motion.button>
+    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} ><b>Submit{" "}</b> </motion.button>
       </form>
     </motion.div>
        
