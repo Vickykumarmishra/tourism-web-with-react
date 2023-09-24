@@ -7,9 +7,19 @@ import Swal from "sweetalert2";
 import { useNavigate } from 'react-router-dom';
 import useSound from "use-sound";
 import {VscFeedback} from 'react-icons/vsc'
-
+import { useFormik } from 'formik';
+import * as yup from "yup";
+import { signUpSchema } from "../schema/Index";
 //import Lottie from 'lottie-web';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+
+
+const initialValues={
+
+  name:"",
+  email:"",
+  comment:"",
+  }
 
 export default function Form(){
   const [name, setName] = useState("");
@@ -19,6 +29,14 @@ export default function Form(){
   const [play]=useSound("error.mp3");
   const navigate = useNavigate();
   
+    const {values,errors,touched,handleBlur,handleChange,handleSubmit}=useFormik({
+    initialValues:initialValues,
+    validationSchema:signUpSchema,
+    onSubmit:(values,action)=>{
+    action.resetForm();
+    }
+    })
+
   function handleName() {
 
     let named = document.getElementById("name").value;
@@ -30,7 +48,7 @@ export default function Form(){
 
   }
 
-  function handleSubmit(event) {
+  function handleSubmiit(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
   const url="https://panicky-fawn-trunks.cyclic.app/posst"
@@ -40,7 +58,7 @@ export default function Form(){
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'some details are missing!',
+        text: 'All fields must be filled!',
         footer: '<a href="">Why do I have this issue?</a>'
       })
     }
@@ -88,9 +106,9 @@ export default function Form(){
         width: "20rem",
         marginTop: "2rem",
         borderRadius:"0.5rem",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'
-      }}   whileHover={{scale:1.1}}
+      }} 
     >
-      <h1 style={{marginTop:'0.5rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
+      <h1 style={{marginTop:'0.5rem' ,color:'white'}}>
       <VscFeedback/> <b>Feedback</b>
       </h1>
 
@@ -99,41 +117,52 @@ export default function Form(){
   autoplay
   loop
   src="https://lottie.host/0c8df0c1-439f-4bbf-a6d0-3c0fd9889323/UkUFs0ozXX.json"
-  style={{ height: '8rem', width: '10rem' ,marginTop:"0rem",padding:'0rem'}}
+  style={{ height: '8rem', width: '10rem'}}
 >
   {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}
 </Player>
 
 
-      <form onSubmit={handleSubmit} style={{color:'white'}}>
+      <form  onSubmit={handleSubmit} style={{color:'white'}}>
         Name :
         <motion.input
           name="name"
           id="name"
-          onChange={handleName}
+          value={values.name}
+          onChange={handleChange}
+           onBlur={handleBlur}
           style={{ width: "12rem" ,borderRadius:'0.5rem'}}  whileHover={{scale:1.1}}
         />
         <br /> <br />
+        {errors.name && touched.name?(<p  style={{color:'red'}}className='form-error'>{errors.name}</p>):null}
+        
         Email :
         <motion.input
           name="email"
           id="email"
-          onChange={handleName}
+          value={values.email}
+          onChange={handleChange}
+          onBlur={handleBlur}
           style={{ width: "12rem",borderRadius:'0.5rem' }} whileHover={{scale:1.1}}
         />
         <br />
         <br />
+        {errors.email && touched.email?(<p  style={{color:'red'}}className='form-error'>{errors.email}</p>):null}
+        
       <p style={{marginLeft:"1.5rem"}}>write down your Comment below:</p> 
         <motion.textarea
-         
+          value={values.comment}
           name="comment"
           id="comment"
-          onChange={handleName}
+          onChange={handleChange} 
+          onBlur={handleBlur}
           style={{ width: "14rem" ,borderRadius:'0.5rem',marginLeft:"2.4rem"}} whileHover={{scale:1.1}}
         />
         <br />
         <br />
-    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} ><b>Submit{" "}</b> </motion.button>
+        {errors.comment && touched.comment?(<p  style={{color:'red'}}className='form-error'>{errors.comment}</p>):null}
+        
+    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} onSubmit={handleSubmiit}><b>Submit{" "}</b> </motion.button>
       </form>
     </motion.div>
        
