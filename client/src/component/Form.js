@@ -22,6 +22,58 @@ const initialValues={
   }
 
 export default function Form(){
+
+  function handleClick(e){
+
+    e.preventDefault(); // Prevent the default form submission behavior
+     
+    // let named = document.getElementById("name").value;
+    // let emailed = document.getElementById("email").value;
+    // let commented = document.getElementById("comment").value;
+    const { name, email, comment } = values;
+    setName(name);
+    setEmail(email);
+    setAdd(comment);
+    const url="https://panicky-fawn-trunks.cyclic.app/posst"
+      if(name==''||email==''||comment==''){
+  
+        play();
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'All fields must be filled!',
+          
+        })
+      }
+      else if(name!=''||email!=''||comment!=''){
+        fetch(url, {
+          method: "POST",
+          //mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+            
+          },
+          body: JSON.stringify({ name, email, comment }),
+          
+        })
+          .then(() => {
+            console.log("Data updated successfully");
+          })
+          .catch((error) => {
+            console.error("Error updating data:", error);
+          });
+         
+          Swal.fire(
+            'saved',
+            'Your information saved to database!',
+            'success'
+          )
+  
+          // navigate('/BiharTourismHome'); 
+      }
+    
+  }
+  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setAdd] = useState("");
@@ -29,114 +81,17 @@ export default function Form(){
   const [play]=useSound("error.mp3");
   const navigate = useNavigate();
   
-  const {values,errors,touched,handleBlur,handleChange,handleSubmit,e}=useFormik({
+  const {values,errors,touched,handleBlur,handleChange,handleSubmit}=useFormik({
     initialValues:initialValues,
     validationSchema:signUpSchema,
     onSubmit:(values,action)=>{
-      e.preventDefault(); // Prevent the default form submission behavior
-
-      const url="https://panicky-fawn-trunks.cyclic.app/posst"
-        if(name==''||email==''||comment==''){
-    
-          play();
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'some details are missing!',
-            footer: '<a href="">Why do I have this issue?</a>'
-          })
-        }
-        else if(name!=''||email!=''||comment!=''){
-          fetch(url, {
-            method: "POST",
-            //mode: "no-cors",
-            headers: {
-              "Content-Type": "application/json",
-              
-            },
-            body: JSON.stringify({ name, email, comment }),
-            
-          })
-            .then(() => {
-              console.log("Data updated successfully");
-            })
-            .catch((error) => {
-              console.error("Error updating data:", error);
-            });
-           
-            Swal.fire(
-              'saved',
-              'Your information saved to database!',
-              'success'
-            )
-    
-            // navigate('/BiharTourismHome'); 
-        }
-      
+     
     action.resetForm();
-    },
-    onChange:()=>{
-    let named = document.getElementById("name").value;
-    let emailed = document.getElementById("email").value;
-    let commented = document.getElementById("comment").value;
-    setName(named);
-    setEmail(emailed);
-    setAdd(commented);
     }
+    
     })
-  // function handleName() {
-
-  //   let named = document.getElementById("name").value;
-  //   let emailed = document.getElementById("email").value;
-  //   let commented = document.getElementById("comment").value;
-  //   setName(named);
-  //   setEmail(emailed);
-  //   setAdd(commented);
-
-  // }
-
-  //function handleSubmit(event) {
-  //   event.preventDefault(); // Prevent the default form submission behavior
-
-  // const url="https://panicky-fawn-trunks.cyclic.app/posst"
-  //   if(name==''||email==''||comment==''){
-
-  //     play();
-  //     Swal.fire({
-  //       icon: 'error',
-  //       title: 'Oops...',
-  //       text: 'some details are missing!',
-  //       footer: '<a href="">Why do I have this issue?</a>'
-  //     })
-  //   }
-  //   else if(name!=''||email!=''||comment!=''){
-  //     fetch(url, {
-  //       method: "POST",
-  //       //mode: "no-cors",
-  //       headers: {
-  //         "Content-Type": "application/json",
-          
-  //       },
-  //       body: JSON.stringify({ name, email, comment }),
-        
-  //     })
-  //       .then(() => {
-  //         console.log("Data updated successfully");
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error updating data:", error);
-  //       });
-       
-  //       Swal.fire(
-  //         'saved',
-  //         'Your information saved to database!',
-  //         'success'
-  //       )
-
-  //       // navigate('/BiharTourismHome'); 
-  //   }
   
-  
+
     
        
 //}
@@ -201,7 +156,7 @@ export default function Form(){
         <br />
         <br />
         {errors.comment && touched.comment?(<p  style={{color:'red'}}className='form-error'>{errors.comment}</p>):null}
-    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} ><b>Submit{" "}</b> </motion.button>
+    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} onClick={handleClick} ><b>Submit{" "}</b> </motion.button>
       </form>
     </motion.div>
        
