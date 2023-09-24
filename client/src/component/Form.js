@@ -8,8 +8,18 @@ import { useNavigate } from 'react-router-dom';
 import useSound from "use-sound";
 import {VscFeedback} from 'react-icons/vsc'
 
-//import Lottie from 'lottie-web';
+import { useFormik } from 'formik'
+import * as yup from "yup";
+import { signUpSchema } from '../schema/Index'
+
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+
+const initialValues={
+
+  name:"",
+  email:"",
+  comment:"",
+  }
 
 export default function Form(){
   const [name, setName] = useState("");
@@ -19,62 +29,117 @@ export default function Form(){
   const [play]=useSound("error.mp3");
   const navigate = useNavigate();
   
-  function handleName() {
+  const {values,errors,touched,handleBlur,handleChange,handleSubmit,e}=useFormik({
+    initialValues:initialValues,
+    validationSchema:signUpSchema,
+    onSubmit:(values,action)=>{
+      e.preventDefault(); // Prevent the default form submission behavior
 
+      const url="https://panicky-fawn-trunks.cyclic.app/posst"
+        if(name==''||email==''||comment==''){
+    
+          play();
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'some details are missing!',
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
+        }
+        else if(name!=''||email!=''||comment!=''){
+          fetch(url, {
+            method: "POST",
+            //mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json",
+              
+            },
+            body: JSON.stringify({ name, email, comment }),
+            
+          })
+            .then(() => {
+              console.log("Data updated successfully");
+            })
+            .catch((error) => {
+              console.error("Error updating data:", error);
+            });
+           
+            Swal.fire(
+              'saved',
+              'Your information saved to database!',
+              'success'
+            )
+    
+            // navigate('/BiharTourismHome'); 
+        }
+      
+    action.resetForm();
+    },
+    onChange:()=>{
     let named = document.getElementById("name").value;
     let emailed = document.getElementById("email").value;
     let commented = document.getElementById("comment").value;
     setName(named);
     setEmail(emailed);
     setAdd(commented);
-
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-
-  const url="https://panicky-fawn-trunks.cyclic.app/posst"
-    if(name==''||email==''||comment==''){
-
-      play();
-      Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'some details are missing!',
-        footer: '<a href="">Why do I have this issue?</a>'
-      })
     }
-    else if(name!=''||email!=''||comment!=''){
-      fetch(url, {
-        method: "POST",
-        //mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
+    })
+  // function handleName() {
+
+  //   let named = document.getElementById("name").value;
+  //   let emailed = document.getElementById("email").value;
+  //   let commented = document.getElementById("comment").value;
+  //   setName(named);
+  //   setEmail(emailed);
+  //   setAdd(commented);
+
+  // }
+
+  //function handleSubmit(event) {
+  //   event.preventDefault(); // Prevent the default form submission behavior
+
+  // const url="https://panicky-fawn-trunks.cyclic.app/posst"
+  //   if(name==''||email==''||comment==''){
+
+  //     play();
+  //     Swal.fire({
+  //       icon: 'error',
+  //       title: 'Oops...',
+  //       text: 'some details are missing!',
+  //       footer: '<a href="">Why do I have this issue?</a>'
+  //     })
+  //   }
+  //   else if(name!=''||email!=''||comment!=''){
+  //     fetch(url, {
+  //       method: "POST",
+  //       //mode: "no-cors",
+  //       headers: {
+  //         "Content-Type": "application/json",
           
-        },
-        body: JSON.stringify({ name, email, comment }),
+  //       },
+  //       body: JSON.stringify({ name, email, comment }),
         
-      })
-        .then(() => {
-          console.log("Data updated successfully");
-        })
-        .catch((error) => {
-          console.error("Error updating data:", error);
-        });
+  //     })
+  //       .then(() => {
+  //         console.log("Data updated successfully");
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error updating data:", error);
+  //       });
        
-        Swal.fire(
-          'saved',
-          'Your information saved to database!',
-          'success'
-        )
+  //       Swal.fire(
+  //         'saved',
+  //         'Your information saved to database!',
+  //         'success'
+  //       )
 
-        // navigate('/BiharTourismHome'); 
-    }
+  //       // navigate('/BiharTourismHome'); 
+  //   }
   
   
     
        
-}
+//}
    return (
     
     <>
@@ -88,7 +153,7 @@ export default function Form(){
         width: "20rem",
         marginTop: "2rem",
         borderRadius:"0.5rem",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'
-      }}   whileHover={{scale:1.1}}
+      }}  
     >
       <h1 style={{marginTop:'0.5rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
       <VscFeedback/> <b>Feedback</b>
@@ -110,29 +175,32 @@ export default function Form(){
         <motion.input
           name="name"
           id="name"
-          onChange={handleName}
+          value={values.name} onChange={handleChange} onBlur={handleBlur} 
           style={{ width: "12rem" ,borderRadius:'0.5rem'}}  whileHover={{scale:1.1}}
         />
         <br /> <br />
+        {errors.name && touched.name?(<p  style={{color:'red'}}className='form-error'>{errors.name}</p>):null}
         Email :
         <motion.input
           name="email"
           id="email"
-          onChange={handleName}
+          value={values.email} onChange={handleChange} onBlur={handleBlur} 
           style={{ width: "12rem",borderRadius:'0.5rem' }} whileHover={{scale:1.1}}
         />
         <br />
         <br />
+        {errors.email && touched.email?(<p  style={{color:'red'}}className='form-error'>{errors.email}</p>):null}
       <p style={{marginLeft:"1.5rem"}}>write down your Comment below:</p> 
         <motion.textarea
          
           name="comment"
           id="comment"
-          onChange={handleName}
+          value={values.comment} onChange={handleChange} onBlur={handleBlur} 
           style={{ width: "14rem" ,borderRadius:'0.5rem',marginLeft:"2.4rem"}} whileHover={{scale:1.1}}
         />
         <br />
         <br />
+        {errors.comment && touched.comment?(<p  style={{color:'red'}}className='form-error'>{errors.comment}</p>):null}
     <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} ><b>Submit{" "}</b> </motion.button>
       </form>
     </motion.div>
