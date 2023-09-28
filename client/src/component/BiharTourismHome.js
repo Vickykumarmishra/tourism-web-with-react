@@ -116,7 +116,7 @@ useEffect(()=>{
   <img src="raj.jpg" className="img-fluid" alt="..."/>
   <div className="card-body">
     <h5 className="card-title"  style={{color:'white'}}>Rajgir</h5>
-    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's.</p>
+    <p className="card-text"  style={{color:'white'}}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <NavLink to="/Rajgir"  className="btn btn-outline-light" id="btn5">Know In Details</NavLink>
     
   </div>
