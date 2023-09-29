@@ -13,7 +13,7 @@ export default function Footer() {
    
     <div className="container p-4 pb-0"  id='myfoot' style={{width:'100%'}}>
       
-      <section className="">
+      <section>
        
         <div className="row" style={{width:'100%'}}>
           
