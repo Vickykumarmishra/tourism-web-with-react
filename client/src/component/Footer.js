@@ -4,13 +4,14 @@ export default function Footer() {
   return (
    
       
-<center><div style={{width:"100%"}}>
+<center><div className='container-fluid' style={{width:"100%"}}>
   
   <footer
           className="text-center text-lg-start text-white  " 
           style={{backgroundColor:"dark",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}}
           >
    
+
     <div className="container p-4 pb-0"  id='myfoot' style={{width:'100%'}}>
       
       <section>
@@ -42,6 +43,7 @@ export default function Footer() {
             <p id="para7"><i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
             <p id="para8"><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
           </div>
+         
          
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 className="text-uppercase mb-4 font-weight-bold">Follow us</h6>
