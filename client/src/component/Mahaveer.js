@@ -33,10 +33,12 @@ export default function Mahaveer() {
    onClick={()=>{dispatch(decrement()) ;if(data>0){ toast("1 item removed successfully",{toastId:'success9'})}}}>
 
         <b>Delete Item</b>  </motion.button>
+
+        <NavLink to='https://buy.stripe.com/test_5kAdSbgBb4NjdwcdQQ'><motion.button whileHover={{scale:1.1}} style={{marginTop:"0.5rem",marginLeft:"0.5rem"}} className='btn btn-info'><b>purchase ₹</b></motion.button></NavLink>
     </center>
     </div>
     
-    <div className="col"  style={{ border:'0.2rem solid black', borderRadius:'1rem' , padding:'1rem' ,color:'white', marginBottom:'6.7rem',marginTop:'2.5rem',boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}}>
+    {/* <div className="col"  style={{ border:'0.2rem solid black', borderRadius:'1rem' , padding:'1rem' ,color:'white', marginBottom:'6.7rem',marginTop:'2.5rem',boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}}>
    <center>  <h3 style={{color:"white"}}>Billing:</h3><br/>
    
    Quantity added to cart:{data}kg<br/><br/>
@@ -46,7 +48,7 @@ export default function Mahaveer() {
   <NavLink to='https://buy.stripe.com/test_5kAdSbgBb4NjdwcdQQ'><motion.button whileHover={{scale:1.1}} className='btn btn-info'><b>purchase ₹</b></motion.button></NavLink>
    </center>
 
-    </div>
+    </div> */}
 
     
     
