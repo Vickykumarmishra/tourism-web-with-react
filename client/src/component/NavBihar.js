@@ -20,7 +20,7 @@ export default function NavBihar() {
  const {user}=useAuth0();
 
   return (
-    <div style={{borderBottom: '1px solid white',marginBottom:'5rem',backgroundColor:'black'}}>
+    <div style={{borderBottom: '1px solid white',marginBottom:'7rem',backgroundColor:'black'}}>
       <nav id ="navig" className="navbar navbar-expand-lg navbar-dark bg-black fixed-top" style={{boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}} >
     <div className="container-fluid">
         
