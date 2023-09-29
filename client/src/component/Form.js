@@ -164,10 +164,10 @@ export default function Form(){
 
 </div>
 
-     
+<NavLink to="/BiharTourismHome"><center><div style={{backgroundColor:'lightgreen',width:'20rem',marginTop:'1rem'}}><center><b>Go Home</b></center></div></center></NavLink>
        </motion.div></center> 
 
-       <NavLink to="/BiharTourismHome"><center><div style={{backgroundColor:'lightgreen',width:'20rem'}}><center><b>Go Home</b></center></div></center></NavLink>
+       
        </>
 
    )

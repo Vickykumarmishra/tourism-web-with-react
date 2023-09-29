@@ -2,20 +2,20 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div >
+   
       
-      <div>
+<center><div style={{width:"100%"}}>
   
   <footer
-          className="text-center text-lg-start text-white" 
+          className="text-center text-lg-start text-white  " 
           style={{backgroundColor:"dark",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}}
           >
    
-    <div className="container p-4 pb-0"  id='myfoot'>
+    <div className="container p-4 pb-0"  id='myfoot' style={{width:'100%'}}>
       
       <section className="">
        
-        <div className="row">
+        <div className="row" style={{width:'100%'}}>
           
           <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6  className="text-uppercase mb-4 font-weight-bold">
@@ -105,20 +105,12 @@ export default function Footer() {
       
     </div>
     
-    <div
-         className="text-center p-3"
-         style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}
-         >
-      © 2020 Copyright:
-      <a className="text-white" href="https://mdbootstrap.com/"
-         >vickyKumarmishra.gov.in</a
-        >
-    </div>
+   
    
   </footer>
   
 </div>
-
-    </div>
+</center>
+   
   )
 }
