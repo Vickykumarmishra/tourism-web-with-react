@@ -159,7 +159,7 @@ export default function Form(){
         <br />
         <br />
         {errors.comment && touched.comment?(<p  style={{color:'red'}}className='form-error'>{errors.comment}</p>):null}
-   <center><motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem"}} onClick={handleClick} ><b>Submit{" "}</b> </motion.button></center> 
+   <center><motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "blue",color:'white', marginBottom: "1rem"}} onClick={handleClick} ><b>Submit{" "}</b> </motion.button></center> 
       </form>
     </motion.div>
        
