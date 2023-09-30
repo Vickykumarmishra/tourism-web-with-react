@@ -24,7 +24,7 @@ export default function Mahaveer() {
   
     <center><p style={{color:'red'}}>Laddu,Price:100,12% discount on total amount</p><center/>
     
-    <motion.button   whileHover={{scale:1.1}} style={{marginTop:'0.5rem'}}  type='submit' className="btn btn-info"
+    <motion.button   whileHover={{scale:1.1}} style={{marginTop:'0.5rem',backgroundColor:"blue"}}  type='submit' className="btn btn-info"
         onClick={()=>{dispatch(increment());toast("item added succesfully",{toastId:'success6'})}}>
 
         <b style={{color:'white'}}>Add Item+ </b> </motion.button>
