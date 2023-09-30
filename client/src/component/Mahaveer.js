@@ -27,14 +27,14 @@ export default function Mahaveer() {
     <motion.button   whileHover={{scale:1.1}} style={{marginTop:'0.5rem'}}  type='submit' className="btn btn-info"
         onClick={()=>{dispatch(increment());toast("item added succesfully",{toastId:'success6'})}}>
 
-        <b>Add Item+ </b> </motion.button>
+        <b style={{color:'white'}}>Add Item+ </b> </motion.button>
 
         <motion.button  whileHover={{scale:1.1}} style={{marginLeft:'0.5rem',marginTop:'0.5rem'}} id="buttn" type='submit'className="btn btn-info"
    onClick={()=>{dispatch(decrement()) ;if(data>0){ toast("1 item removed successfully",{toastId:'success9'})}}}>
 
         <b>Delete Item</b>  </motion.button>
 
-        <NavLink to='https://buy.stripe.com/test_5kAdSbgBb4NjdwcdQQ'><motion.button whileHover={{scale:1.1}} style={{marginTop:"0.5rem",marginLeft:"0.5rem"}} className='btn btn-info'><b>purchase ₹</b></motion.button></NavLink>
+        {/* <NavLink to='https://buy.stripe.com/test_5kAdSbgBb4NjdwcdQQ'><motion.button whileHover={{scale:1.1}} style={{marginTop:"0.5rem",marginLeft:"0.5rem"}} className='btn btn-info'><b>purchase ₹</b></motion.button></NavLink> */}
     </center>
     </div>
     
@@ -50,7 +50,9 @@ export default function Mahaveer() {
 
     </div> */}
 
-    
+    <div className='row container' style={{marginBottom:"0.5rem",backgroundColor:'blue'}}>
+   <center><NavLink to='https://buy.stripe.com/test_5kAdSbgBb4NjdwcdQQ'><b style={{color:'white'}}>Purchase ₹</b></NavLink></center> 
+    </div>
     
   </div>
 </div>
@@ -64,12 +66,13 @@ export default function Mahaveer() {
         <br/>
       <h4  style={{color:'white'}}>Ram Rasoi</h4>
 Arrangements for free food have been made to the devotees who visit Ramlala at Ram Rasoi.[7] Acharya Kishore Kunal, secretary of the Shri Mahavir Sthan Nyas Samiti,[8] started it on Sunday 1 December 2019. This free food facility functions in the Amava temple just outside the temple of Ramlala, at Amawa Mandir Complex, Ramkot, Ayodhya-224123.[9] Devotees who visit Ramlala at Ram Rasoi get free food between 11:30 am till 3:00 pm every day.
-For this, 60 quintals of Govind Bhog shear rice have been sent to Ayodhya.[10] This rice has been sourced from Mokri village in Kaimur (Bihar).[11] The services of Shri Ram's kitchen and Shri Ramlala's bhog will function continuously. There is arrangement of feeding one thousand people daily in the initial phase. After this, based on the increasing number of Ramlala's devotees, food will be arranged for more and more people. The increasing popularity of Ram Rasoi can be seen in the expenses visible in the annual reports
+For this, 60 quintals of Govind Bhog shear rice have been sent to Ayodhya.[10] This rice has been sourced from Mokri village in Kaimur (Bihar).[11] The services of Shri Ram's kitchen and Shri Ramlala's bhog will function continuously. There is arrangement of feeding one thousand people daily in the initial phase. After this, based on the increasing number of Ramlala's devotees, food will be arranged for more and more people. 
+The increasing popularity of Ram Rasoi can be seen in the expenses visible in the annual reports
       </p>
 
       
-      <NavLink to='MoreDetails' className='className="btn btn-primary"' style={{marginLeft:'1rem',marginRight:'1rem',color:'white'}}>MoreDetails</NavLink>
-      <center><Link whileHover={{scale:1.1}} to="/BiharTourismHome"  ><button className='btn btn-info'><b>Home</b></button></Link></center>
+      {/* <NavLink to='MoreDetails' className='className="btn btn-primary"' style={{marginLeft:'1rem',marginRight:'1rem',color:'white'}}>MoreDetails</NavLink> */}
+      <center><Link  to="/BiharTourismHome"  ><div className='container' style={{marginBottom:"0.5rem",marginTop:"0.5rem" ,backgroundColor:'blue'}}><b style={{color:"white"}}>Home</b></div></Link></center>
       
       <Outlet />
 

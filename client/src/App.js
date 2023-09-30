@@ -58,7 +58,7 @@ isi tarah props ka use karke ham component ko asani se kahi v use kar sakte hai 
  to indicate that the browser was able to communicate with a given server, but the server could not find what was requested.*/}
           {/**nested routing */}
           <Route path="/Mahaveer/" element={<Mahaveer />}>
-            <Route path="MoreDetails" element={<MoreDetails />} />
+            {/* <Route path="MoreDetails" element={<MoreDetails />} /> */}
           </Route>
           <Route
             path="/*"
