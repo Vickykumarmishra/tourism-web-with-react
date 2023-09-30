@@ -48,7 +48,7 @@ export default function Chatthpuja() {
 
 पर्यावरणविदों का दावा है कि छठ[15] सबसे पर्यावरण-अनुकूल हिंदू त्यौहार है।[16][17] यह त्यौहार नेपाली और भारतीय लोगों द्वारा अपने डायस्पोरा के साथ मनाया जाता है।
       </p></div>
-      <center><Link whileHover={{scale:1.1}} to="/BiharTourismHome"  ><button className='btn btn-info'><b>Home</b></button></Link></center>
+      <center><Link  to="/BiharTourismHome"  ><div className='container' style={{marginBottom:"0.5rem",marginTop:"0.5rem" ,backgroundColor:'blue'}}><b style={{color:"white"}}>Home</b></div></Link></center>
     </div>
   )
 }

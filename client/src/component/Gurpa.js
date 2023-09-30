@@ -14,7 +14,7 @@ It is also considered to be one of the tallest peaks in the Gangetic plains. The
       </p>
 
 
-      <center><Link whileHover={{scale:1.1}} to="/BiharTourismHome"  ><button className='btn btn-info'><b>Home</b></button></Link></center>
+      <center><Link  to="/BiharTourismHome"  ><div className='container' style={{marginBottom:"0.5rem",marginTop:"0.5rem" ,backgroundColor:'blue'}}><b style={{color:"white"}}>Home</b></div></Link></center>
       
 
       

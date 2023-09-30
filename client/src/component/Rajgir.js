@@ -15,7 +15,7 @@ The town is also notable in Jainism and also in  Buddhism.[4] It was the birthpl
 
 The ancient Nalanda university was located in the vicinity of Rajgir, and the contemporary Nalanda University named after it was founded in 2010 nearby. The town is also famed for its natural springs and towering hills that dominate the landscape.
       </p>
-      <center><Link whileHover={{scale:1.1}} to="/BiharTourismHome"  ><button className='btn btn-info'>Home</button></Link></center>
+      <center><Link  to="/BiharTourismHome"  ><div className='container' style={{marginBottom:"0.5rem",marginTop:"0.5rem" ,backgroundColor:'blue'}}><b style={{color:"white"}}>Home</b></div></Link></center>
       
     </div>
       

@@ -12,7 +12,7 @@ export default function Nalanda() {
        Its decline began in the late Pala period, but the final blow was the invasion by Bakhtiyar Khilji around 1200 CE. The subjects that were taught at Nalanda included Buddhist scriptures (of both the Mahayana and Hinayana schools), philosophy, theology, metaphysics, logic, grammar, astronomy and medicine. Chinese travellers Hiuen-Tsang and I-Tsing had written detailed accounts about the university.
 
       </p>
-      <center><Link whileHover={{scale:1.1}} to="/BiharTourismHome"  ><button className='btn btn-info'><b>Home</b></button></Link></center>
+      <center><Link  to="/BiharTourismHome"  ><div className='container' style={{marginBottom:"0.5rem",marginTop:"0.5rem" ,backgroundColor:'blue'}}><b style={{color:"white"}}>Home</b></div></Link></center>
       
     </div>
   )
