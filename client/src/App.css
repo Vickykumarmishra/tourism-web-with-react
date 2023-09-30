@@ -89,6 +89,14 @@ margin-right: 2px;
     color:white; 
 }
 
+.flex-container{
+
+  display: flex;
+  
+  align-items: flex-start;
+
+}
+
 .nvlnk{
 
   /*color:gold;*/

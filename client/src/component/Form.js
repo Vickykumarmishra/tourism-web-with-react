@@ -100,19 +100,19 @@ export default function Form(){
     <>
    <center><motion.div className="container shadow p-3 mb-5 bg-body-tertiary rounded" >
     
-    
+   <h1 style={{marginTop:'0.5rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
+      <VscFeedback/> <b>Feedback</b>
+      </h1>
     <motion.div
       className="container"
       style={{
         border: "0.1rem solid white",
-        width: "20rem",
+        width: "15rem",
         marginTop: "2rem",
         borderRadius:"0.5rem",boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'
       }}  
     >
-      <h1 style={{marginTop:'0.5rem' ,color:'white',textShadow: '1px 1px 2px black, 0 0 25px white 0 0 5px white'}}>
-      <VscFeedback/> <b>Feedback</b>
-      </h1>
+      
 
       
       <Player
@@ -126,37 +126,40 @@ export default function Form(){
 
 
       <form onSubmit={handleSubmit} style={{color:'white'}}>
-        Name :
+        {/* <p>Write your name</p> */}
         <motion.input
           name="name"
           id="name"
+          placeholder="Enter your full name"
           value={values.name} onChange={handleChange} onBlur={handleBlur} 
           style={{ width: "12rem" ,borderRadius:'0.5rem'}}  whileHover={{scale:1.1}}
         />
         <br /> <br />
         {errors.name && touched.name?(<p  style={{color:'red'}}className='form-error'>{errors.name}</p>):null}
-        Email :
+        {/* <p>Write your email</p> */}
         <motion.input
           name="email"
           id="email"
+          placeholder="Enter your EmailId"
           value={values.email} onChange={handleChange} onBlur={handleBlur} 
           style={{ width: "12rem",borderRadius:'0.5rem' }} whileHover={{scale:1.1}}
         />
         <br />
         <br />
         {errors.email && touched.email?(<p  style={{color:'red'}}className='form-error'>{errors.email}</p>):null}
-      <p style={{marginLeft:"1.5rem"}}>write down your Comment below:</p> 
+      {/* <p style={{marginLeft:"0.5rem"}}>write down your Comment below:</p>  */}
         <motion.textarea
          
           name="comment"
           id="comment"
+          placeholder="comment here"
           value={values.comment} onChange={handleChange} onBlur={handleBlur} 
-          style={{ width: "14rem" ,borderRadius:'0.5rem',marginLeft:"2.4rem"}} whileHover={{scale:1.1}}
+          style={{ width: "13rem" ,borderRadius:'0.5rem'}} whileHover={{scale:1.1}}
         />
         <br />
         <br />
         {errors.comment && touched.comment?(<p  style={{color:'red'}}className='form-error'>{errors.comment}</p>):null}
-    <motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem", marginLeft: "2rem"}} onClick={handleClick} ><b>Submit{" "}</b> </motion.button>
+   <center><motion.button whileHover={{scale:1.1}} type="submit" className="btn btn-danger" style={{ backgroundColor: "white",color:'black', marginBottom: "1rem"}} onClick={handleClick} ><b>Submit{" "}</b> </motion.button></center> 
       </form>
     </motion.div>
        
@@ -164,7 +167,7 @@ export default function Form(){
 
 </div>
 
-<NavLink to="/BiharTourismHome"><center><div style={{backgroundColor:'lightgreen',width:'20rem',marginTop:'1rem'}}><center><b>Go Home</b></center></div></center></NavLink>
+<NavLink to="/BiharTourismHome"><center><div className="container" style={{backgroundColor:'lightgreen',width:'15rem',marginTop:'1rem'}}><center><b>Go Home</b></center></div></center></NavLink>
        </motion.div></center> 
 
        

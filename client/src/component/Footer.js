@@ -4,7 +4,7 @@ export default function Footer() {
   return (
    
       
-<center><div className='container-fluid' style={{width:"100%"}}>
+<center><div style={{width:"100%"}}>
   
   <footer
           className="text-center text-lg-start text-white  " 
