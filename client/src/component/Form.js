@@ -34,7 +34,7 @@ export default function Form(){
     setName(name);
     setEmail(email);
     setAdd(comment);
-    const url="https://panicky-fawn-trunks.cyclic.app/posst"
+    const url="https://tourism-web-with-react-zf8g.vercel.app/posst"
       if(name==''||email==''||comment==''){
   
         play();
