@@ -66,8 +66,6 @@ const { loginWithRedirect } = useAuth0();
   <div className="row">
     <div className="col" style={{}}>
       
-      {/* <NavLink to="/Form"><h2> {isAuthenticated && <p style={{color:'white'}}>GoToHomePage</p>}</h2></NavLink> */}
-      
        <center>{isAuthenticated?<li><motion.button whileHover={{scale:1.1}} style={{marginRight:"1rem",height:'2.5rem',marginTop:'5rem',marginBottom:'2rem'}} className="btn btn-light" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } }) }><center><b> Log Out</b></center></motion.button></li>: <li><motion.button whileHover={{scale:1.1}} className="btn btn-light" style={{marginRight:"1rem",height:'2.5rem',marginTop:'5rem',marginBottom:'2rem'}} onClick={() =>loginWithRedirect() }><center><b>Log In</b></center></motion.button></li>}</center>
       {isAuthenticated && fire()}
       {isAuthenticated && toast("loggedInn",{ toastId: 'success11'})}

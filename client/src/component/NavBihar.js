@@ -26,7 +26,7 @@ export default function NavBihar() {
         
      <BrowserRouter>
       <Link className="navbar-brand" to="https://getbootstrap.com/docs/5.2/components/navbar/"><img src="logo.png"  alt="..." style={{backgroundColor: "black",borderRadius:'0.2rem'}} className="logo" width="100" height="85"/></Link>
-      {/* <Link className="navbar-brand" to="/BiharTourismHome"><b style={{color:"white"}}><h1 id="header">Bihar Tourism</h1></b></Link> */}
+      {/* <Link className="navbar-bran  d" to="/BiharTourismHome"><b style={{color:"white"}}><h1 id="header">Bihar Tourism</h1></b></Link> */}
       </BrowserRouter>
       
       <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
