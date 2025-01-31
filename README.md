@@ -1,4 +1,3 @@
 # tourism-web-with-react
-SOME BUTTONS ARE UNDER DEVELOPMENT IN THIS WEBSITE. SO SOME BUTTONS MIGHT NOT WORK.
-IN NEXT VERSION FEATURES WILL BE ADDED TO  THAT BUTTONS.
+Hi visitor, This was my first project which i have made when i started to learn MERN stack development. I used to learn concepts and used to apply them here. 
 THANK YOU!
